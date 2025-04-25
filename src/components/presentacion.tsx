@@ -4,7 +4,7 @@ export default function Presentacion() {
 
         <div className="flex flex-raw items-center justify-center h-screen bg-gradient-to-b from-[#042F40] to-[#042F40]">
             <TiltedCard
-                imageSrc="src\assets\images\perfil IN2.png"
+                imageSrc="src\assets\images\aly.png"
                 altText="Aly Danner"
                 captionText="Aly Danner"
                 containerHeight="300px"
