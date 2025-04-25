@@ -1,10 +1,11 @@
 import TiltedCard from './Imagen';
+import Aly from '../assets/images/aly.png';
 export default function Presentacion() {
     return (
 
         <div className="flex flex-raw items-center justify-center h-screen bg-gradient-to-b from-[#042F40] to-[#042F40]">
             <TiltedCard
-                imageSrc="src\assets\images\aly.png"
+                imageSrc={Aly}
                 altText="Aly Danner"
                 captionText="Aly Danner"
                 containerHeight="300px"
