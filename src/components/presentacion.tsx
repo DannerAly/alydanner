@@ -25,7 +25,7 @@ export default function Presentacion() {
             <div className="text-center text-white mt-4">
                 <h1 className="text-2xl font-bold">Hola, soy Aly Danner</h1>
                 <p className="text-lg">Desarrollador Web/Mobile & Productor Audiovisual</p>
-                
+                <h1>In progress...</h1>
 
             </div>
         </div>
