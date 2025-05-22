@@ -1,7 +1,10 @@
 import "./App.css";
 
 import Particles from "./components/fondo/Particles";
+import InfoCard from "./components/InfoCard";
+import Navbar from "./components/Navbar";
 import Presentacion from "./components/presentacion";
+import Proyectos from "./components/proyectos";
 function App() {
   return (
     <>
@@ -27,11 +30,14 @@ function App() {
           disableRotation={false}
         />
       </div>
-      <div className="flex items-center justify-center h-screen">
+
+
+      <Navbar />
+      <main className="flex flex-col space-y-20 items-center justify-center pt-24">
+        <InfoCard text="Hola, ¡soy un desarrollador de aplicaciones independiente con sede en Bolivia!" />
         <Presentacion />
-        
-      </div>
-      
+        <Proyectos />
+      </main>
     </>
   );
 }
