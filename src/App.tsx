@@ -4,6 +4,7 @@ import Particles from "./components/fondo/Particles";
 import InfoCard from "./components/InfoCard";
 import Navbar from "./components/Navbar";
 import Presentacion from "./components/presentacion";
+import Modelo3D from "./components/Modelo3D";
 import Proyectos from "./components/proyectos";
 function App() {
   return (
@@ -34,9 +35,12 @@ function App() {
 
       <Navbar />
       <main className="flex flex-col space-y-20 items-center justify-center pt-24">
-        <InfoCard text="Hola, ¡soy un desarrollador de aplicaciones independiente con sede en Bolivia!" />
-        <Presentacion />
-        <Proyectos />
+        <Modelo3D url="/maximo.glb" height="400px" />
+        <div className="-mt-32 z-10 w-full flex flex-col items-center">
+          <InfoCard text="Hola, ¡soy un desarrollador de aplicaciones independiente con sede en Bolivia!" />
+          <Presentacion />
+          <Proyectos />
+        </div>
       </main>
     </>
   );
