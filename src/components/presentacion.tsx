@@ -4,11 +4,6 @@ export default function Presentacion() {
     return (
 
         <div className='flex flex-col md:flex-row md:items-center md:mt-4 md:gap-x-10'>
-            <div className="text-center text-white mt-4">
-                <h1 className="text-2xl font-bold">Aly Danner</h1>
-                <p className="text-base">Artista Digital (Desarrollador, Productor Audiovisual)</p>
-               
-            </div>
 
             <div className="flex items-center justify-center mt-5" >
                 <TiltedCard
@@ -29,6 +24,11 @@ export default function Presentacion() {
                         </p>
                     }
                 />
+            </div>
+            <div className="text-center text-white mt-4">
+                <h1 className="text-2xl font-bold">Aly Danner</h1>
+                <p className="text-base">Artista Digital (Desarrollador, Productor Audiovisual)</p>
+               
             </div>
         </div>
 
