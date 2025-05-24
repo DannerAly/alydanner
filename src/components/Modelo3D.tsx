@@ -5,6 +5,7 @@ import { OrbitControls, Environment, useGLTF } from "@react-three/drei";
 interface Modelo3DProps {
   url: string;
   height?: string;
+  width?: string;
 }
 
 function Model({ url }: { url: string }) {
@@ -20,11 +21,11 @@ function Model({ url }: { url: string }) {
     }
   });
 
-  return <primitive object={scene} />;
+  return <primitive object={scene} position={[0, -15, 0]} scale={[1.5,1.5,1.5]}/>;
 }
 
-const Modelo3D: React.FC<Modelo3DProps> = ({ url, height }) => (
-  <div style={{ width: "100%", height, margin: "0 auto" }}>
+const Modelo3D: React.FC<Modelo3DProps> = ({ url, height, width }) => (
+  <div style={{ width, height, margin: "0 auto" }}>
     <Canvas camera={{ position: [0, 0, 70], fov: 50 }} style={{ background: "transparent" }}>
       <ambientLight intensity={0.7} />
       <directionalLight position={[2, 2, 2]} intensity={1} />

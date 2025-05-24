@@ -34,14 +34,35 @@ function App() {
 
 
       <Navbar />
-      <main className="flex flex-col space-y-20 items-center justify-center pt-24">
-        <Modelo3D url="/maximo.glb" height="300px" />
-        <div className="-mt-32 z-10 w-full flex flex-col items-center">
+      <main className="flex flex-col md:flex-row gap-8  items-center justify-center pt-24">
+        <div className="h-[200px] md:h-[400px] md:w-[400px] w-full flex items-center justify-center">
+          <Modelo3D url="/maximo.glb" width = "400px" height="100%" />
+        </div>
+        <div className="z-10 w-full md:w-[400px] flex flex-col items-center ">
           <InfoCard text="Hola, ¡soy un desarrollador de aplicaciones independiente con sede en Bolivia!" />
           <Presentacion />
           <Proyectos />
         </div>
       </main>
+
+
+       <div className="z-10 w-full md:w-[400px] flex flex-col items-center ">
+          <InfoCard text="Hola, ¡soy un desarrollador de aplicaciones independiente con sede en Bolivia!" />
+          <Presentacion />
+          <Proyectos />
+        </div> <div className="z-10 w-full md:w-[400px] flex flex-col items-center ">
+          <InfoCard text="Hola, ¡soy un desarrollador de aplicaciones independiente con sede en Bolivia!" />
+          <Presentacion />
+          <Proyectos />
+        </div> <div className="z-10 w-full md:w-[400px] flex flex-col items-center ">
+          <InfoCard text="Hola, ¡soy un desarrollador de aplicaciones independiente con sede en Bolivia!" />
+          <Presentacion />
+          <Proyectos />
+        </div> <div className="z-10 w-full md:w-[400px] flex flex-col items-center ">
+          <InfoCard text="Hola, ¡soy un desarrollador de aplicaciones independiente con sede en Bolivia!" />
+          <Presentacion />
+          <Proyectos />
+        </div>
     </>
   );
 }
