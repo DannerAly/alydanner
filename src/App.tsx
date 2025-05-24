@@ -35,7 +35,7 @@ function App() {
 
       <Navbar />
       <main className="flex flex-col space-y-20 items-center justify-center pt-24">
-        <Modelo3D url="/maximo.glb" height="400px" />
+        <Modelo3D url="/maximo.glb" height="300px" />
         <div className="-mt-32 z-10 w-full flex flex-col items-center">
           <InfoCard text="Hola, ¡soy un desarrollador de aplicaciones independiente con sede en Bolivia!" />
           <Presentacion />
