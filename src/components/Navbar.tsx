@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-[#042F40] text-white shadow-md fixed top-0 left-0 z-10">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
-        <div className="text-2xl font-bold">AlyDanner</div>
+        <div className="text-2xl"> <b>Aly</b> Danner</div>
         <div className="hidden md:flex space-x-8">
           <a href="#presentacion" className="hover:text-cyan-400 transition">Presentación</a>
           <a href="#proyectos" className="hover:text-cyan-400 transition">Proyectos</a>
