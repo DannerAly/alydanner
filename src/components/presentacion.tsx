@@ -9,7 +9,7 @@ export default function Presentacion() {
                 <TiltedCard
                     imageSrc={Aly}
                     altText="Aly Danner"
-                    captionText="Aly Danner"
+                    captionText="Contactar..."
                     containerHeight="150px"
                     containerWidth="150px"
                     imageHeight="150px"
@@ -27,7 +27,8 @@ export default function Presentacion() {
             </div>
             <div className="text-center text-white mt-4">
                 <h1 className="text-2xl font-bold">Aly Danner</h1>
-                <p className="text-base">Artista Digital (Desarrollador, Productor Audiovisual)</p>
+                <p className="text-base text-[#12F2F2]">Artista Digital </p>
+              
                
             </div>
         </div>
