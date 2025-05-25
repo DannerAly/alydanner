@@ -13,7 +13,7 @@
     "@react-three/drei": "^10.0.8",
     "@react-three/fiber": "^9.1.2",
     "@tailwindcss/vite": "^4.1.4",
-    "framer-motion": "^12.9.2",
+    "framer-motion": "^12.12.2",
     "gl-matrix": "^3.4.3",
     "ogl": "^1.0.11",
     "react": "^19.0.0",
