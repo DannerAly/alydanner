@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -29,16 +30,20 @@ const Navbar = () => {
       {/* Menú móvil */}
       <div
         className={`
-          md:hidden bg-[#042F40] px-4 pb-4 flex flex-col space-y-2
+          md:hidden  px-4 pb-4 flex flex-col gap-3 pt-5 space-y-2
+          bg-zinc-700
+          rounded-r-3xl
           transition-all duration-300
-          absolute w-full left-0 top-16 z-20
+          absolute w-3/6 left-0 top-16 z-20
           ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
         `}
       >
-        <a href="#presentacion" className="hover:text-cyan-400 transition" onClick={() => setOpen(false)}>Presentación</a>
-        <a href="#proyectos" className="hover:text-cyan-400 transition" onClick={() => setOpen(false)}>Proyectos</a>
-        <a href="#contacto" className="hover:text-cyan-400 transition" onClick={() => setOpen(false)}>Contacto</a>
-      </div>
+        
+          <Link to="/" className="hober:text-cyan-400 transition" onClick={()=> setOpen(!open)}>Sobre Aly</Link>
+          <Link to="/proyectos" className="hover:text-cyan-400 transition" onClick={()=> setOpen(!open)}>Proyectos</Link>
+          <Link to="/contacto" className="hover:text-cyan-400 transition" onClick={()=> setOpen(!open)}>Contacto</Link>
+
+         </div>
     </nav>
   );
 };

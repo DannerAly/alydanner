@@ -1,11 +1,12 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 import Particles from "./components/fondo/Particles";
-import InfoCard from "./components/InfoCard";
 import Navbar from "./components/Navbar";
-import Presentacion from "./components/presentacion";
-import Modelo3D from "./components/Modelo3D";
-import Proyectos from "./components/proyectos";
+import Contacto from "./components/vistas/Contacto";
+import Proyectos from "./components/vistas/Proyectos";
+import SobreMi from "./components/vistas/SobreMi";
+
 function App() {
   return (
     <>
@@ -33,36 +34,14 @@ function App() {
       </div>
 
 
-      <Navbar />
-      <main className="flex flex-col md:flex-row gap-8  items-center justify-center pt-24">
-        <div className="h-[200px] md:h-[400px] md:w-[400px] w-full flex items-center justify-center">
-          <Modelo3D url="/maximo.glb" width = "400px" height="100%" />
-        </div>
-        <div className="z-10 w-full md:w-[400px] flex flex-col items-center ">
-          <InfoCard text="Hola, ¡soy un desarrollador de aplicaciones independiente con sede en Bolivia!" />
-          <Presentacion />
-          <Proyectos />
-        </div>
-      </main>
-
-
-       <div className="z-10 w-full md:w-[400px] flex flex-col items-center ">
-          <InfoCard text="Hola, ¡soy un desarrollador de aplicaciones independiente con sede en Bolivia!" />
-          <Presentacion />
-          <Proyectos />
-        </div> <div className="z-10 w-full md:w-[400px] flex flex-col items-center ">
-          <InfoCard text="Hola, ¡soy un desarrollador de aplicaciones independiente con sede en Bolivia!" />
-          <Presentacion />
-          <Proyectos />
-        </div> <div className="z-10 w-full md:w-[400px] flex flex-col items-center ">
-          <InfoCard text="Hola, ¡soy un desarrollador de aplicaciones independiente con sede en Bolivia!" />
-          <Presentacion />
-          <Proyectos />
-        </div> <div className="z-10 w-full md:w-[400px] flex flex-col items-center ">
-          <InfoCard text="Hola, ¡soy un desarrollador de aplicaciones independiente con sede en Bolivia!" />
-          <Presentacion />
-          <Proyectos />
-        </div>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<SobreMi />} />
+          <Route path="/proyectos" element={<Proyectos />} />
+          <Route path="/contacto" element={<Contacto />} />
+        </Routes>
+      </Router>
     </>
   );
 }

@@ -21,7 +21,7 @@ function Model({ url }: { url: string }) {
     }
   });
 
-  return <primitive object={scene} position={[0, -15, 0]} scale={[1.5,1.5,1.5]}/>;
+  return <primitive object={scene} position={[0, -18, 0]} scale={[1.5,1.5,1.5]}/>;
 }
 
 const Modelo3D: React.FC<Modelo3DProps> = ({ url, height, width }) => (
