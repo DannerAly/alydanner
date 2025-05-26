@@ -1,11 +1,8 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as BrowserRouter } from "react-router-dom";
 import "./App.css";
 
 import Particles from "./components/fondo/Particles";
-import Navbar from "./components/Navbar";
-import Contacto from "./components/vistas/Contacto";
-import Proyectos from "./components/vistas/Proyectos";
-import SobreMi from "./components/vistas/SobreMi";
+import AppRoutes from "./routes/routes";
 
 function App() {
   return (
@@ -34,14 +31,9 @@ function App() {
       </div>
 
 
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<SobreMi />} />
-          <Route path="/proyectos" element={<Proyectos />} />
-          <Route path="/contacto" element={<Contacto />} />
-        </Routes>
-      </Router>
+      <BrowserRouter>
+        <AppRoutes/>
+      </BrowserRouter>
     </>
   );
 }

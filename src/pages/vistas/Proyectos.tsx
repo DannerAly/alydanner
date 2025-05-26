@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import RollingGallery from "../utils/RollingGallery";
+import RollingGallery from "../../components/utils/RollingGallery";
 
 function Proyectos() {
   const [show, setShow] = useState(false);

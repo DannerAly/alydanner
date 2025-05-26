@@ -15,7 +15,7 @@ const InfoCard: React.FC<InfoCardProps> = ({ children }) => (
         w-0 h-0
         border-l-8 border-r-8 border-t-8
         border-l-transparent border-r-transparent border-t-zinc-700/80
-        md:absolute md:left-10 md:bottom-0
+        md:absolute md:left-20 md:bottom-0
         md:translate-y-full
       "
     ></div>
