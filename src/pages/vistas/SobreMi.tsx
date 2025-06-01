@@ -12,7 +12,7 @@ function SobreMi() {
   }, []);
 
   return (
-    <div className={`pt-24 transition-opacity duration-700 ${show ? "opacity-100" : "opacity-0"}`}>
+    <div className={`pt-20 transition-opacity duration-700 ${show ? "opacity-100" : "opacity-0"}`}>
       <main className="flex flex-col md:flex-row gap-8 items-center justify-center">
         <div className="h-[150px] md:h-[400px] md:w-[400px] w-full flex items-center justify-center">
           <Modelo3D url="/maximo.glb" width="400px" height="100%" />
