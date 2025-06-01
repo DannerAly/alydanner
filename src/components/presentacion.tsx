@@ -16,29 +16,26 @@ export default function Presentacion() {
                         <p className="text-base text-[#12F2F2]">Artista Digital </p>
                     </div>
                     <div className='flex flex-row gap-3'>
-                        <a href="https://github.com/DannerAly" target="_blank" rel="noopener noreferrer">
-                            <FaGithub className="text-2xl text-white hover:text-[#12F2F2]" />
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/aly-danner" target="_blank" rel="noopener noreferrer">
-                            <FaLinkedin className="text-2xl text-white hover:text-[#12F2F2]" />
-                        </a>
-
-                        <a href="https://www.instagram.com/aly_danner" target="_blank" rel="noopener noreferrer">
-                            <FaInstagram className="text-2xl text-white hover:text-[#12F2F2]" />
-                        </a>
-
-                        <a href="https://www.tiktok.com/@aly_danner" className='text-2xl text-white hover:text-[#12F2F2]'>
-                            <FaTiktok className="text-2xl text-white hover:text-[#12F2F2]" />
-                        </a>
-
-                        <a href="https://www.facebook.com/abelalydel" className='text-2xl text-white hover:text-[#12F2F2]'>
-                            <FaFacebook className="text-2xl text-white hover:text-[#12F2F2]" />
-                        </a>
-
-                        <a href="https://www.youtube.com/channel/UCtJgySARiqFdnpMjmHaZJ8Q" className='text-2xl text-white hover:text-[#12F2F2]'>
-                            <FaYoutube className="text-2xl text-white hover:text-[#12F2F2]" />
-                        </a>
+                        <div className='videos tarjeta flex flex-row gap-3'>
+                            <a href="https://github.com/DannerAly" target="_blank" rel="noopener noreferrer">
+                                <FaGithub className="text-2xl text-white hover:text-[#12F2F2]" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/aly-danner" target="_blank" rel="noopener noreferrer">
+                                <FaLinkedin className="text-2xl text-white hover:text-[#12F2F2]" />
+                            </a>
+                            <a href="https://www.instagram.com/aly_danner" target="_blank" rel="noopener noreferrer">
+                                <FaInstagram className="text-2xl text-white hover:text-[#12F2F2]" />
+                            </a>
+                            <a href="https://www.tiktok.com/@aly_danner" target="_blank" rel="noopener noreferrer">
+                                <FaTiktok className="text-2xl text-white hover:text-[#12F2F2]" />
+                            </a>
+                            <a href="https://www.facebook.com/abelalydel" target="_blank" rel="noopener noreferrer">
+                                <FaFacebook className="text-2xl text-white hover:text-[#12F2F2]" />
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCtJgySARiqFdnpMjmHaZJ8Q" target="_blank" rel="noopener noreferrer">
+                                <FaYoutube className="text-2xl text-white hover:text-[#12F2F2]" />
+                            </a>
+                        </div>
                     </div>
 
                 </div>
