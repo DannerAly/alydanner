@@ -5,6 +5,7 @@ import Modelo3D from "../../components/Modelo3D";
 import Button from "../../components/utils/Botton";
 import LineadeTiempo from "../../components/LineadeTiempo";
 import RotatingText from "../../components/Frase";
+import { motion } from "framer-motion";
 
 function SobreMi() {
   const [show, setShow] = useState(false);
@@ -53,7 +54,7 @@ function SobreMi() {
           />
         </div>
 
-    { /* --------------------------------------------ESTE ES EL CONTENEDOR PRINCIPAL ------------------------------------------------------------ */}
+        { /* --------------------------------------------ESTE ES EL CONTENEDOR PRINCIPAL ------------------------------------------------------------ */}
         <div className="flex  flex-col items-center md:items-start md:flex-row md:w-[80%]  gap-2 h-300">
 
 
@@ -65,14 +66,19 @@ function SobreMi() {
 
           { /* HOBBIES */}
           <div className="flex flex-col items-start text-1/4xl w-[80%] md:p-5 mx-9 rounded-2xl gap-1">
-            <p className="text-cyan-50 text-xl font-bold underline ">I ❤️</p>
-            <div>
-              <p className="text-cyan-50 text-justify">
-                <span className="text-[#12F2F2]">Fotografía</span>, 
-                Tocar la Guitarra, Jugar Basquetbol, 
-                <span className="text-[#12F2F2]"> Videografía</span> Machine Learning,
-                <span className="text-[#12F2F2]"> Enseñar Matemáticas e Inteligencia Artificial</span>  
-              </p>  </div>
+            <p className="text-cyan-50 text-xl font-bold underline">I ❤️</p>
+            <motion.p
+              className="text-cyan-50 text-justify"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.9 }}
+            >
+              <span className="text-[#12F2F2]">Fotografía</span>,
+              Tocar la Guitarra, Jugar Basquetbol,
+              <span className="text-[#12F2F2]"> Videografía</span> Machine Learning,
+              <span className="text-[#12F2F2]"> Enseñar Matemáticas e Inteligencia Artificial</span>
+            </motion.p>
           </div>
         </div>
       </div>
