@@ -56,7 +56,7 @@ function SobreMi() {
         </div>
 
         { /* --------------------------------------------ESTE ES EL CONTENEDOR PRINCIPAL ------------------------------------------------------------ */}
-        <div className="flex  flex-col items-center md:items-start md:flex-row md:w-[80%]  gap-2 h-300">
+        <div className="flex  flex-col items-center md:items-start md:flex-row md:w-[80%]  gap-2 ">
 
 
           { /* BIOGRAFIA */}
@@ -81,6 +81,8 @@ function SobreMi() {
               <span className="text-[#12F2F2]"> Enseñar Matemáticas e Inteligencia Artificial</span>
             </motion.p>
           </div>
+
+          <br /><br /><br /><br /><br />
         </div>
       </div>
 
