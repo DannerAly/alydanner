@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const timelineItems = [
   { date: "2002", text: "Nació en Potosí - Bolivia" },
   { date: "2017", text: "Inició su carrera en Redes Sociales" },
-  { date: "2019", text: "Comenzó a trabajar como productor audiovisual Freelancer" },
+  { date: "2019", text: "Empezó a desempeñarse como productor audiovisual independiente." },
   { date: "2021", text: "Comenzó a estudiar Ing. de Sistemas y Derecho" },
   { date: "2025", text: "Trabaja como Freelancer" },
 ];

@@ -34,7 +34,7 @@ function SobreMi() {
       </div>
 
       <div className="flex flex-col items-center">
-        <hr className="mt-8 border-t-2 border-gray-200 w-4/5 mx-auto opacity-60" />
+        <hr className="mt-8 border-t-2 border-[#12F2F2] w-4/5 mx-auto opacity-60" />
 
         {/*FRASE*/}
         <div className="flex flex-row gap-1 items-center mt-5 mb-2  mx-2 ">
