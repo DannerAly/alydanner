@@ -12,7 +12,7 @@ export default function TimelineVertical() {
   return (
     <div className="relative flex flex-col  min-h-[350px] pl-8">
       {/* Línea vertical */}
-      <div className="absolute left-4 top-0 h-98 md:h-74 bottom-0 w-0.5 bg-gradient-to-b from-zinc-700 to-cyan-400" />
+      <div className="absolute left-4 top-0 h-92 md:h-74 bottom-0 w-0.5 bg-gradient-to-b from-zinc-700 to-cyan-400" />
       {timelineItems.map((item, idx) => (
         <motion.div
           key={item.date}
