@@ -34,7 +34,7 @@ function SobreMi() {
       </div>
 
       <div className="flex flex-col items-center">
-        <hr className="mt-8 border-t-2 border-[#12F2F2] md:border-gray-500 w-4/5 mx-auto opacity-60" />
+        <hr className="mt-8 border-t-2 md:m-10 border-[#12F2F2] md:border-gray-500 w-4/5 mx-auto opacity-60" />
 
         {/*FRASE*/}
         <div className="flex flex-row gap-1 items-center mt-5 mb-2  mx-2 ">
@@ -53,7 +53,8 @@ function SobreMi() {
           />
         </div>
 
-        <div className="flex  flex-col items-center md:items-start md:flex-row  gap-2 h-300">
+    { /* --------------------------------------------ESTE ES EL CONTENEDOR PRINCIPAL ------------------------------------------------------------ */}
+        <div className="flex  flex-col items-center md:items-start md:flex-row md:w-[80%]  gap-2 h-300">
 
 
           { /* BIOGRAFIA */}
@@ -66,8 +67,11 @@ function SobreMi() {
           <div className="flex flex-col items-start text-1/4xl w-[80%] md:p-5 mx-9 rounded-2xl gap-1">
             <p className="text-cyan-50 text-xl font-bold underline ">I ❤️</p>
             <div>
-              <p className="text-cyan-50">
-                <span className="text-[#12F2F2]">Fotografía</span>, Tocar la Guitarra, Jugar Basquetbol, <span className="text-[#12F2F2]">Videografía</span> Machine Learning
+              <p className="text-cyan-50 text-justify">
+                <span className="text-[#12F2F2]">Fotografía</span>, 
+                Tocar la Guitarra, Jugar Basquetbol, 
+                <span className="text-[#12F2F2]"> Videografía</span> Machine Learning,
+                <span className="text-[#12F2F2]"> Enseñar Matemáticas e Inteligencia Artificial</span>  
               </p>  </div>
           </div>
         </div>
