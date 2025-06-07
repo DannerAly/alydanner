@@ -34,7 +34,7 @@ function SobreMi() {
       </div>
 
       <div className="flex flex-col items-center">
-        <hr className="mt-8 border-t-2 border-[#12F2F2] w-4/5 mx-auto opacity-60" />
+        <hr className="mt-8 border-t-2 border-[#12F2F2] md:border-gray-500 w-4/5 mx-auto opacity-60" />
 
         {/*FRASE*/}
         <div className="flex flex-row gap-1 items-center mt-5 mb-2  mx-2 ">
@@ -57,9 +57,18 @@ function SobreMi() {
 
 
           { /* BIOGRAFIA */}
-          <div className="flex flex-col items-start text-1/4xl md:p-5 mx-9 rounded-2xl gap-1">
+          <div className="flex flex-col items-start w-[80%] text-1/4xl md:p-5 mx-9 rounded-2xl gap-1">
             <p className="text-cyan-50 text-xl font-bold underline ">Bio</p>
             <LineadeTiempo />
+          </div>
+
+          { /* HOBBIES */}
+          <div className="flex flex-col items-start text-1/4xl w-[80%] md:p-5 mx-9 rounded-2xl gap-1">
+            <p className="text-cyan-50 text-xl font-bold underline ">I ❤️</p>
+            <div>
+              <p className="text-cyan-50">
+                <span className="text-[#12F2F2]">Fotografía</span>, Tocar la Guitarra, Jugar Basquetbol, <span className="text-[#12F2F2]">Videografía</span> Machine Learning
+              </p>  </div>
           </div>
         </div>
       </div>
