@@ -1,18 +1,32 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import InfoCard from "../../components/InfoCard";
 import Presentacion from "../../components/presentacion";
 import Modelo3D from "../../components/Modelo3D";
 import Button from "../../components/utils/Botton";
 import LineadeTiempo from "../../components/LineadeTiempo";
 import RotatingText from "../../components/Frase";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 function SobreMi() {
   const [show, setShow] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setShow(true);
   }, []);
+
+  // Cerrar menú al hacer click fuera
+  useEffect(() => {
+    if (!menuOpen) return;
+    function handleClickOutside(event: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setMenuOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [menuOpen]);
 
   return (
     <div className={`pt-10 transition-opacity duration-700 ${show ? "opacity-100" : "opacity-0"}`}>
@@ -31,7 +45,35 @@ function SobreMi() {
       </main>
       {/* Botón debajo de main */}
       <div className="flex justify-center gap-2 mt-8 ">
-        <Button to="/proyectos">Proyectos</Button>
+        <div ref={menuRef} className="relative">
+          <Button to="#" onClick={() => setMenuOpen((v) => !v)}>Proyectos</Button>
+          <AnimatePresence>
+            {menuOpen && (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 10 }}
+                transition={{ duration: 0.18 }}
+                className="absolute left-1/2 -translate-x-1/2 mt-2 bg-cyan-50 rounded-xl shadow-lg py-2 z-50 min-w-[160px]"
+              >
+                <a
+                  href="/proyectos/web"
+                  className="block px-4 py-2 hover:bg-cyan-400 hover:text-white transition"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Desarrollo de Apps
+                </a>
+                <a
+                  href="/proyectos/video"
+                  className="block px-4 py-2 hover:bg-cyan-400 hover:text-white transition"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Producción Audiovisual
+                </a>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
         <Button to="/contactar">Contactar</Button>
       </div>
 
@@ -55,17 +97,16 @@ function SobreMi() {
           />
         </div>
 
-        { /* --------------------------------------------ESTE ES EL CONTENEDOR PRINCIPAL ------------------------------------------------------------ */}
+        {/* --------------------------------------------ESTE ES EL CONTENEDOR PRINCIPAL ------------------------------------------------------------ */}
         <div className="flex  flex-col items-center md:items-start md:flex-row md:w-[80%]  gap-2 ">
 
-
-          { /* BIOGRAFIA */}
+          {/* BIOGRAFIA */}
           <div className="flex flex-col items-start w-[80%] text-1/4xl md:p-5 mx-9 rounded-2xl gap-1">
             <p className="text-cyan-50 text-xl font-bold underline mt-3 ">Biografía</p>
             <LineadeTiempo />
           </div>
 
-          { /* HOBBIES */}
+          {/* HOBBIES */}
           <div className="flex flex-col items-start text-1/4xl w-[80%] md:p-5 mx-9 rounded-2xl gap-1">
             <p className="text-cyan-50 text-xl font-bold underline">Yo ❤️</p>
             <motion.p
@@ -85,7 +126,6 @@ function SobreMi() {
           <br /><br /><br /><br /><br />
         </div>
       </div>
-
     </div>
   );
 }
