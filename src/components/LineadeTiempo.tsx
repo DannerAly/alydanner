@@ -4,15 +4,15 @@ const timelineItems = [
   { date: "2002", text: "Nació en Potosí - Bolivia" },
   { date: "2017", text: "Inició su carrera en Redes Sociales" },
   { date: "2019", text: "Comenzó a trabajar como productor audiovisual Freelancer" },
-  { date: "2021", text: "Estudió Ing. de Sistemas y Derecho" },
-  { date: "2018-03-15", text: "Sending you a piece" },
+  { date: "2021", text: "Comenzó a estudiar Ing. de Sistemas y Derecho" },
+  { date: "2025", text: "Trabaja como Freelancer" },
 ];
 
 export default function TimelineVertical() {
   return (
     <div className="relative flex flex-col  min-h-[350px] pl-8">
       {/* Línea vertical */}
-      <div className="absolute left-4 top-0 h-98 bottom-0 w-0.5 bg-gradient-to-b from-zinc-700 to-cyan-400" />
+      <div className="absolute left-4 top-0 h-98 md:h-74 bottom-0 w-0.5 bg-gradient-to-b from-zinc-700 to-cyan-400" />
       {timelineItems.map((item, idx) => (
         <motion.div
           key={item.date}
