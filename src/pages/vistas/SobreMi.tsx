@@ -6,6 +6,7 @@ import Button from "../../components/utils/Botton";
 import LineadeTiempo from "../../components/LineadeTiempo";
 import RotatingText from "../../components/Frase";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function SobreMi() {
   const [show, setShow] = useState(false);
@@ -56,20 +57,20 @@ function SobreMi() {
                 transition={{ duration: 0.18 }}
                 className="absolute left-1/2 -translate-x-1/2 mt-2 bg-cyan-50 rounded-xl shadow-lg py-2 z-50 min-w-[160px]"
               >
-                <a
-                  href="/proyectos/web"
+                <Link
+                  to="/proyectos/web"
                   className="block px-4 py-2 hover:bg-cyan-400 hover:text-white transition"
                   onClick={() => setMenuOpen(false)}
                 >
                   Desarrollo de Apps
-                </a>
-                <a
-                  href="/proyectos/video"
+                </Link>
+                <Link
+                  to="/proyectos/video"
                   className="block px-4 py-2 hover:bg-cyan-400 hover:text-white transition"
                   onClick={() => setMenuOpen(false)}
                 >
                   Producción Audiovisual
-                </a>
+                </Link>
               </motion.div>
             )}
           </AnimatePresence>
@@ -78,7 +79,7 @@ function SobreMi() {
       </div>
 
       <div className="flex flex-col items-center">
-        <hr className="mt-8 border-t-2 md:m-10 border-[#12F2F2] md:border-gray-500 w-4/5 mx-auto opacity-60" />
+        <hr className="mt-8 border-t-2 md:m-10 border-zinc-700 md:border-zinc-700 w-4/5 mx-auto opacity-60" />
 
         {/*FRASE*/}
         <div className="flex flex-row gap-1 items-center mt-5 mb-2  mx-2 ">
