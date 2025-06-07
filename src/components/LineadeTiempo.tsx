@@ -1,26 +1,26 @@
 import { motion } from "framer-motion";
 
 const timelineItems = [
-  { date: "2018-03-01", text: "Your order starts processing" },
-  { date: "2018-03-02", text: "Order out of stock" },
-  { date: "2018-03-10", text: "Arrival" },
-  { date: "2018-03-12", text: "Order out of the library" },
+  { date: "2002", text: "Nació en Potosí - Bolivia" },
+  { date: "2017", text: "Inició su carrera en Redes Sociales" },
+  { date: "2019", text: "Comenzó a trabajar como productor audiovisual Freelancer" },
+  { date: "2021", text: "Estudió Ing. de Sistemas y Derecho" },
   { date: "2018-03-15", text: "Sending you a piece" },
 ];
 
 export default function TimelineVertical() {
   return (
-    <div className="relative flex flex-col min-h-[350px] pl-8">
+    <div className="relative flex flex-col  min-h-[350px] pl-8">
       {/* Línea vertical */}
-      <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-400" />
+      <div className="absolute left-4 top-0 h-98 bottom-0 w-0.5 bg-gradient-to-b from-zinc-700 to-cyan-400" />
       {timelineItems.map((item, idx) => (
         <motion.div
           key={item.date}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: idx * 0.15 }}
-          className="flex items-start mb-6"
+          transition={{ delay: idx * 0.4, duration: 0.8 }}
+          className="flex items-start  mb-4"
         >
           {/* Punto alineado con la línea */}
           <div className="relative" style={{ width: '2rem' }}>
