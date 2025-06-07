@@ -43,7 +43,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
                   transition={{ duration: 0.18 }}
-                  className="absolute left-0 mt-2 bg-zinc- rounded-xl shadow-lg py-2 z-50 min-w-[160px]"
+                  className="absolute left-0 mt-2 bg-zinc- rounded-xl shadow-lg bg-zinc-700 py-2 z-50 min-w-[160px]"
                 >
                   <Link
                     to="/proyectos/web"

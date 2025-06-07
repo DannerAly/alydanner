@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "../pages/MainLayout";
 import SobreMi from "../pages/vistas/SobreMi";
-import Proyectos from "../pages/vistas/Proyectos";
 import Contacto from "../pages/vistas/Contacto";
+import ProyectosDev from "../pages/vistas/ProyectosDev";
+import ProyectosAud from "../pages/vistas/ProyectosAud";
 
 
 export default function AppRoutes() {
@@ -14,8 +15,11 @@ export default function AppRoutes() {
 
                 <Route path="/" element={<SobreMi/>}></Route>
                 <Route path="/sobreAly" element={<SobreMi />} />
-                <Route path="/proyectos" element={<Proyectos />} />
+                <Route path="/proyectos/web" element={<ProyectosDev />} />
+                <Route path="/proyectos/video" element={<ProyectosAud />} />
+                
                 <Route path="/contacto" element={<Contacto />} />
+                
             </Route>
         </Routes>
     )
