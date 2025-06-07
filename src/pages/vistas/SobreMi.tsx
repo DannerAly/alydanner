@@ -30,8 +30,9 @@ function SobreMi() {
         </div>
       </main>
       {/* Botón debajo de main */}
-      <div className="flex justify-center mt-8 ">
-        <Button to="/proyectos">Proyectos →</Button>
+      <div className="flex justify-center gap-2 mt-8 ">
+        <Button to="/proyectos">Proyectos</Button>
+        <Button to="/contactar">Contactar</Button>
       </div>
 
       <div className="flex flex-col items-center">
