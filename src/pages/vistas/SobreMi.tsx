@@ -61,13 +61,13 @@ function SobreMi() {
 
           { /* BIOGRAFIA */}
           <div className="flex flex-col items-start w-[80%] text-1/4xl md:p-5 mx-9 rounded-2xl gap-1">
-            <p className="text-cyan-50 text-xl font-bold underline ">Bio</p>
+            <p className="text-cyan-50 text-xl font-bold underline mt-3 ">Biografía</p>
             <LineadeTiempo />
           </div>
 
           { /* HOBBIES */}
           <div className="flex flex-col items-start text-1/4xl w-[80%] md:p-5 mx-9 rounded-2xl gap-1">
-            <p className="text-cyan-50 text-xl font-bold underline">I ❤️</p>
+            <p className="text-cyan-50 text-xl font-bold underline">Yo ❤️</p>
             <motion.p
               className="text-cyan-50 text-justify"
               initial={{ opacity: 0, y: 30 }}
