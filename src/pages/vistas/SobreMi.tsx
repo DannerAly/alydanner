@@ -80,10 +80,9 @@ function SobreMi() {
       </div>
 
       <div className="flex flex-col items-center">
-        <hr className="mt-8 border-t-2 md:m-10 border-zinc-700 md:border-zinc-700 w-4/5 mx-auto opacity-60" />
-
+    
         {/*FRASE*/}
-        <div className="flex flex-row gap-1 items-center mt-5 mb-2  mx-2 ">
+        <div className="flex flex-row gap-1 items-center mt-7 mb-2  mx-2 ">
           <h2 className="text-cyan-50 font-bold">Siempre haciendo</h2>
           <RotatingText className="font-black bg-cyan-50 text-zinc-800 px-2 py-1 rounded-lg"
             texts={['Cosas!', 'Videos!', 'Apps!', 'Things!']}
@@ -98,6 +97,8 @@ function SobreMi() {
             rotationInterval={2000}
           />
         </div>
+
+  <hr className="my-5 border-t-2 md:m-10 border-zinc-700 md:border-zinc-700 w-4/5 mx-auto opacity-60" />
 
         {/* --------------------------------------------ESTE ES EL CONTENEDOR PRINCIPAL ------------------------------------------------------------ */}
         <div className="flex  flex-col items-center md:items-start md:flex-row md:w-[80%]  md- ">
