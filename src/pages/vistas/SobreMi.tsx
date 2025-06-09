@@ -109,8 +109,7 @@ function SobreMi() {
             <LineadeTiempo />
           </div>
 
-          <hr className=" my-9 border-t-2 md:m-10 border-zinc-700 md:border-zinc-700 w-4/5 mx-auto opacity-60" />
-
+        <hr className="block md:hidden my-9 border-t-2 border-zinc-700 w-4/5 mx-auto opacity-60" />
           {/* HOBBIES */}
           <div className="flex flex-col items-start text-1/4xl w-[80%] md:p-5 mx-9 rounded-2xl gap-1">
             <p className="text-cyan-50 text-xl font-bold underline">Yo ❤️</p>
@@ -128,8 +127,7 @@ function SobreMi() {
             </motion.p>
           </div>
 
-          <hr className=" my-9 border-t-2 md:m-10 border-zinc-700 md:border-zinc-700 w-4/5 mx-auto opacity-60" />
-
+        <hr className="block md:hidden my-9 border-t-2 border-zinc-700 w-4/5 mx-auto opacity-60" />
 
           {/* HABILIDADES */}
           <div className="flex flex-col items-start text-1/4xl w-[80%] md:p-5 mx-9 rounded-2xl gap-1">
