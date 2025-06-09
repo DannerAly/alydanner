@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import InfoCard from "../../components/InfoCard";
+import InfoCard from "../../components/utils/InfoCard";
 import Presentacion from "../../components/presentacion";
 import Modelo3D from "../../components/Modelo3D";
 import Button from "../../components/utils/Botton";
@@ -139,10 +139,6 @@ function SobreMi() {
           <br /><br /><br /><br /><br />
 
 
-          <br /><br /><br /><br /><br />
-          <br /><br /><br /><br /><br />
-          <br /><br /><br /><br /><br />
-          <br /><br /><br /><br /><br />
         </div>
       </div>
     </div>

@@ -1,4 +1,3 @@
-
 import {
     SiHtml5, SiCss3, SiJavascript, SiTypescript, SiNodedotjs, SiMysql,
     SiReact, SiAstro, SiNextdotjs, SiTailwindcss, SiBootstrap, SiExpress, SiPostgresql,
@@ -13,6 +12,16 @@ const VSCodePNG = () => (
         alt="VS Code"
         className="w-10 h-10 object-contain mb-1"
         style={{ filter: "drop-shadow(0 0 2px #3b82f6)" }}
+    />
+);
+
+// Componente para mostrar el WEBP de DaVinci Resolve
+const DaVinciResolveWEBP = () => (
+    <img
+        src="/davinci.webp"
+        alt="DaVinci Resolve"
+        className="w-10 h-10 object-contain mb-1"
+        style={{ filter: "drop-shadow(0 0 2px #00b8f1)" }}
     />
 );
 
@@ -51,11 +60,12 @@ const categories = [
             { icon: <SiFigma className="text-white" />, label: "Figma" },
             { icon: <SiAdobexd className="text-pink-600" />, label: "Adobe XD" },
             { icon: <SiAdobeillustrator className="text-yellow-400" />, label: "Adobe Illustrator" },
-            { icon: <SiAdobeaftereffects className="text-purple-700" />, label: "Adobe After Effects" },
-            { icon: <SiAdobepremierepro className="text-indigo-600" />, label: "Adobe Premiere" },
+            { icon: <SiAdobeaftereffects className="text-purple-500" />, label: "Adobe After Effects" },
+            { icon: <SiAdobepremierepro className="text-indigo-500" />, label: "Adobe Premiere" },
             { icon: <SiAdobeaudition className="text-green-700" />, label: "Adobe Audition" },
             { icon: <SiAdobephotoshop className="text-blue-300" />, label: "Adobe Photoshop" },
             { icon: <SiBlender className="text-orange-400" />, label: "Blender" },
+            { icon: <DaVinciResolveWEBP />, label: "DaVinci Resolve" },
         ],
     },
 ];
