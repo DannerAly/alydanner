@@ -78,7 +78,7 @@ export default function Softwares() {
             {categories.map((cat) => (
                 <div key={cat.title}>
                     <h2 className="text-lg font-bold mb-4">{cat.title}</h2>
-                    <div className="flex flex-wrap gap-6">
+                    <div className="flex flex-wrap gap-6 justify-between">
                         {cat.items.map(({ icon, label }) => (
                             <div key={label} className="flex flex-col items-center w-20">
                                 <span className="text-4xl mb-1">{icon}</span>

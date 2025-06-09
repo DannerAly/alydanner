@@ -46,7 +46,7 @@ function SobreMi() {
         </div>
       </main>
       {/* Botón debajo de main */}
-      <div className="flex justify-center gap-2 mt-8 ">
+      <div className="flex justify-center gap-2 md:gap-10 mt-8 ">
         <div ref={menuRef} className="relative">
           <Button to="#" onClick={() => setMenuOpen((v) => !v)}>Proyectos</Button>
           <AnimatePresence>
@@ -80,9 +80,9 @@ function SobreMi() {
       </div>
 
       <div className="flex flex-col items-center">
-    
+
         {/*FRASE*/}
-        <div className="flex flex-row gap-1 items-center mt-7 mb-2  mx-2 ">
+        <div className="flex flex-row gap-1 items-center mt-7 mb-2  mx-2 md:text-2xl md:mt-10 ">
           <h2 className="text-cyan-50 font-bold">Siempre haciendo</h2>
           <RotatingText className="font-black bg-cyan-50 text-zinc-800 px-2 py-1 rounded-lg"
             texts={['Cosas!', 'Videos!', 'Apps!', 'Things!']}
@@ -98,37 +98,37 @@ function SobreMi() {
           />
         </div>
 
-  <hr className="my-5 border-t-2 md:m-10 border-zinc-700 md:border-zinc-700 w-4/5 mx-auto opacity-60" />
+        <hr className="my-5 flex-wrap border-t-2 md:m-10 border-zinc-700 md:border-zinc-700 w-4/5 mx-auto opacity-60" />
 
         {/* --------------------------------------------ESTE ES EL CONTENEDOR PRINCIPAL ------------------------------------------------------------ */}
         <div className="flex  flex-col items-center md:items-start md:flex-row md:w-[80%]  md- ">
+          <div className="flex-col md:flex-row">
+            {/* BIOGRAFIA */}
+            <div className="flex flex-col items-start w-[80%] text-1/4xl md:p-5 mx-9 rounded-2xl gap-1">
+              <p className="text-cyan-50 text-xl font-bold underline mt-3 ">Biografía</p>
+              <LineadeTiempo />
+            </div>
 
-          {/* BIOGRAFIA */}
-          <div className="flex flex-col items-start w-[80%] text-1/4xl md:p-5 mx-9 rounded-2xl gap-1">
-            <p className="text-cyan-50 text-xl font-bold underline mt-3 ">Biografía</p>
-            <LineadeTiempo />
+            <hr className="block md:hidden my-9 border-t-2 border-zinc-700 w-4/5 mx-auto opacity-60" />
+            {/* HOBBIES */}
+            <div className="flex flex-col items-start text-1/4xl w-[80%] md:p-5 mx-9 rounded-2xl gap-1">
+              <p className="text-cyan-50 text-xl font-bold underline">Yo ❤️</p>
+              <motion.p
+                className="text-cyan-50 text-justify"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.9 }}
+              >
+                <span className="text-[#12F2F2]">Fotografía</span>,
+                Tocar la Guitarra, Jugar Basquetbol,
+                <span className="text-[#12F2F2]"> Videografía</span> Machine Learning,
+                <span className="text-[#12F2F2]"> Enseñar Matemáticas e Inteligencia Artificial</span>
+              </motion.p>
+            </div>
+
+            <hr className="block md:hidden my-9 border-t-2 border-zinc-700 w-4/5 mx-auto opacity-60" />
           </div>
-
-        <hr className="block md:hidden my-9 border-t-2 border-zinc-700 w-4/5 mx-auto opacity-60" />
-          {/* HOBBIES */}
-          <div className="flex flex-col items-start text-1/4xl w-[80%] md:p-5 mx-9 rounded-2xl gap-1">
-            <p className="text-cyan-50 text-xl font-bold underline">Yo ❤️</p>
-            <motion.p
-              className="text-cyan-50 text-justify"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.9 }}
-            >
-              <span className="text-[#12F2F2]">Fotografía</span>,
-              Tocar la Guitarra, Jugar Basquetbol,
-              <span className="text-[#12F2F2]"> Videografía</span> Machine Learning,
-              <span className="text-[#12F2F2]"> Enseñar Matemáticas e Inteligencia Artificial</span>
-            </motion.p>
-          </div>
-
-        <hr className="block md:hidden my-9 border-t-2 border-zinc-700 w-4/5 mx-auto opacity-60" />
-
           {/* HABILIDADES */}
           <div className="flex flex-col items-start text-1/4xl w-[80%] md:p-5 mx-9 rounded-2xl gap-1">
             <p className="text-cyan-50 text-xl font-bold underline mt-3 ">Habilidades</p>
