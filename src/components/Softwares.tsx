@@ -34,7 +34,7 @@ const categories = [
             { icon: <SiJavascript className="text-yellow-300" />, label: "JavaScript" },
             { icon: <SiTypescript className="text-blue-400" />, label: "TypeScript" },
             { icon: <SiNodedotjs className="text-green-600" />, label: "NodeJS" },
-            { icon: <SiMysql className="text-yellow-700" />, label: "MySQL" },
+
         ],
     },
     {
@@ -46,8 +46,10 @@ const categories = [
             { icon: <SiTailwindcss className="text-cyan-300" />, label: "Tailwind" },
             { icon: <SiBootstrap className="text-purple-500" />, label: "Bootstrap" },
             { icon: <SiExpress className="text-white" />, label: "Express" },
-            { icon: <SiPostgresql className="text-blue-400" />, label: "PostgreSQL" },
             { icon: <SiNestjs className="text-pink-700" />, label: "NestJS" },
+            
+            { icon: <SiPostgresql className="text-blue-400" />, label: "PostgreSQL" },
+            { icon: <SiMysql />, label: "MySQL" },
         ],
     },
     {
