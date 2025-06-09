@@ -7,6 +7,7 @@ import LineadeTiempo from "../../components/LineadeTiempo";
 import RotatingText from "../../components/Frase";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import Softwares from "../../components/Softwares";
 
 function SobreMi() {
   const [show, setShow] = useState(false);
@@ -99,13 +100,15 @@ function SobreMi() {
         </div>
 
         {/* --------------------------------------------ESTE ES EL CONTENEDOR PRINCIPAL ------------------------------------------------------------ */}
-        <div className="flex  flex-col items-center md:items-start md:flex-row md:w-[80%]  gap-2 ">
+        <div className="flex  flex-col items-center md:items-start md:flex-row md:w-[80%]  md- ">
 
           {/* BIOGRAFIA */}
           <div className="flex flex-col items-start w-[80%] text-1/4xl md:p-5 mx-9 rounded-2xl gap-1">
             <p className="text-cyan-50 text-xl font-bold underline mt-3 ">Biografía</p>
             <LineadeTiempo />
           </div>
+
+          <hr className=" my-9 border-t-2 md:m-10 border-zinc-700 md:border-zinc-700 w-4/5 mx-auto opacity-60" />
 
           {/* HOBBIES */}
           <div className="flex flex-col items-start text-1/4xl w-[80%] md:p-5 mx-9 rounded-2xl gap-1">
@@ -124,6 +127,21 @@ function SobreMi() {
             </motion.p>
           </div>
 
+          <hr className=" my-9 border-t-2 md:m-10 border-zinc-700 md:border-zinc-700 w-4/5 mx-auto opacity-60" />
+
+
+          {/* HABILIDADES */}
+          <div className="flex flex-col items-start text-1/4xl w-[80%] md:p-5 mx-9 rounded-2xl gap-1">
+            <p className="text-cyan-50 text-xl font-bold underline mt-3 ">Habilidades</p>
+            <Softwares />
+          </div>
+
+          <br /><br /><br /><br /><br />
+
+
+          <br /><br /><br /><br /><br />
+          <br /><br /><br /><br /><br />
+          <br /><br /><br /><br /><br />
           <br /><br /><br /><br /><br />
         </div>
       </div>
