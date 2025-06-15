@@ -17,7 +17,7 @@ export default function ProyectContent({
 }: ProyectContentProps) {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
-      <img src={imgSrc} alt={title} className="w-full h-48 object-cover" />
+      <img src={imgSrc} alt={title} className="w-full h-40 object-cover" />
       <div className="p-4">
         <h2 className="text-lg font-bold mb-2">{title}</h2>
         {logos.length > 0 && (

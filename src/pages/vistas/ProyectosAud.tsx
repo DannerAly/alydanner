@@ -1,7 +1,7 @@
 import ProyectContent from "../../components/utils/ProyectContent";
 import { FaReact, FaNodeJs } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
 import { SiAdobeaftereffects, SiAdobepremierepro, SiAdobeaudition, SiBlender } from "react-icons/si";
+import Modelo3D from "../../components/Modelo3D";
 
 
 function ProyectosAud() {
@@ -46,7 +46,8 @@ function ProyectosAud() {
   return (
     <>
       <div className="flex flex-col gap-7 items-center mt-4">
-        <h1 className="text-zinc-50 font-bold">Proyectos Dev</h1>
+         <Modelo3D url="/maximo.glb" width="400px" height="100%" />
+        <h1 className="text-zinc-50 font-bold">Proyectos Audiovisuales</h1>
         <div className="flex flex-col md:flex-row flex-wrap gap-10 items-center">
           {proyectos.map((proyecto, idx) => (
             <ProyectContent key={idx} {...proyecto} />
