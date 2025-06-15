@@ -19,7 +19,7 @@ export default function ProyectContent({
   videoUrl,
 }: ProyectContentProps) {
   return (
-    <div className="bg-zinc-50 rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
+    <div className="bg-zinc-50/80 rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
       <div className="relative w-full">
         {videoUrl ? (
           <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
