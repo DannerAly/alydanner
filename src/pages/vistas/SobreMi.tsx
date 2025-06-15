@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import InfoCard from "../../components/utils/InfoCard";
-import Presentacion from "../../components/presentacion";
+import Presentacion from "../../components/SobreMi/presentacion";
 import Modelo3D from "../../components/Modelo3D";
 import Button from "../../components/utils/Botton";
-import LineadeTiempo from "../../components/LineadeTiempo";
-import RotatingText from "../../components/Frase";
+import LineadeTiempo from "../../components/SobreMi/LineadeTiempo";
+import RotatingText from "../../components/SobreMi/Frase";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import Softwares from "../../components/Softwares";
+import Softwares from "../../components/SobreMi/Softwares";
 
 function SobreMi() {
   const [show, setShow] = useState(false);
@@ -85,7 +85,7 @@ function SobreMi() {
         <div className="flex flex-row gap-1 items-center mt-7 mb-2  mx-2 md:text-2xl md:mt-10 ">
           <h2 className="text-cyan-50 font-bold">Siempre haciendo</h2>
           <RotatingText className="font-black bg-cyan-50 text-zinc-800 px-2 py-1 rounded-lg"
-            texts={['Cosas!', 'Videos!', 'Apps!', 'Things!']}
+            texts={['Videos!', 'Apps!']}
             mainClassName="px-2 sm:px-2 md:px-3 bg-cyan-100 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
             staggerFrom={"last"}
             initial={{ y: "100%" }}
@@ -103,13 +103,6 @@ function SobreMi() {
         {/* --------------------------------------------ESTE ES EL CONTENEDOR PRINCIPAL ------------------------------------------------------------ */}
         <div className="flex  flex-col items-center md:items-start md:flex-row md:w-[80%]  md- ">
           <div className="flex-col md:flex-row">
-            {/* BIOGRAFIA */}
-            <div className="flex flex-col items-start w-[80%] text-1/4xl md:p-5 mx-9 rounded-2xl gap-1">
-              <p className="text-cyan-50 text-xl font-bold underline mt-3 ">Biografía</p>
-              <LineadeTiempo />
-            </div>
-
-            <hr className="block md:hidden my-9 border-t-2 border-zinc-700 w-4/5 mx-auto opacity-60" />
             {/* HOBBIES */}
             <div className="flex flex-col items-start text-1/4xl w-[80%] md:p-5 mx-9 rounded-2xl gap-1">
               <p className="text-cyan-50 text-xl font-bold underline">Yo ❤️</p>
@@ -120,14 +113,23 @@ function SobreMi() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.9 }}
               >
-                <span className="text-[#12F2F2]">Fotografía</span>,
+                <span className="text-[#12F2F2]">Hacer videos para Internet, Fotografía</span>,
                 Tocar la Guitarra, Jugar Basquetbol,
-                <span className="text-[#12F2F2]"> Videografía</span> Machine Learning,
+                <span className="text-[#12F2F2]"> Videografía,</span> Machine Learning,
                 <span className="text-[#12F2F2]"> Enseñar Matemáticas e Inteligencia Artificial</span>
               </motion.p>
             </div>
 
             <hr className="block md:hidden my-9 border-t-2 border-zinc-700 w-4/5 mx-auto opacity-60" />
+
+            {/* BIOGRAFIA */}
+            <div className="flex flex-col items-start w-[80%] text-1/4xl md:p-5 mx-9 rounded-2xl gap-1">
+              <p className="text-cyan-50 text-xl font-bold underline mt-3 ">Biografía</p>
+              <LineadeTiempo />
+            </div>
+
+            <hr className="block md:hidden my-9 border-t-2 border-zinc-700 w-4/5 mx-auto opacity-60" />
+
           </div>
           {/* HABILIDADES */}
           <div className="flex flex-col items-start text-1/4xl w-[80%] md:p-5 mx-9 rounded-2xl gap-1">
