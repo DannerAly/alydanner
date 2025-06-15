@@ -1,5 +1,4 @@
 import ProyectContent from "../../components/utils/ProyectContent";
-import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiAdobeaftereffects, SiAdobepremierepro, SiAdobeaudition, SiBlender, SiAdobephotoshop } from "react-icons/si";
 import Modelo3D from "../../components/Modelo3D";
 
@@ -7,9 +6,24 @@ import Modelo3D from "../../components/Modelo3D";
 function ProyectosAud() {
   const proyectos = [
     {
+      imgSrc: "https://img.youtube.com/vi/ABXvrLiqeEE/hqdefault.jpg",
+      videoUrl: "https://youtu.be/ABXvrLiqeEE?si=vvVtdjsQkv9ls4Kh", // Link al video
+      title: "Sucre Cinematic - Conociendo la Capital de Bolivia",
+      logos: [
+        <SiAdobepremierepro key="premiere" size={24} color="#7C1FFF" />,
+        <SiAdobeaudition key="audition" size={24} color="green" />,
+        <SiAdobeaftereffects key="aftereffects" size={24} color="#C154FF" />,
+        <SiAdobephotoshop key="photoshop" size={24} color="blue" />,
+        <SiBlender key="blender" size={24} color="#FF7300" />,
+      ],
+      description:
+        "Herramienta para registrar, dar seguimiento y resolver incidencias en proyectos de desarrollo, facilitando la comunicación y el control de tareas.",
+      tags: ["Incidencias", "Gestión", "Proyectos"]
+    },
+    {
       imgSrc: "https://img.youtube.com/vi/cNuv9UgGNY8/hqdefault.jpg", // Miniatura de YouTube
       videoUrl: "https://youtu.be/cNuv9UgGNY8", // Link al video
-      title: "Tipiza Cinematic",
+      title: "Tupiza Cinematic - La Joya Bella de Bolivia",
       logos: [
         <SiAdobepremierepro key="premiere" size={24} color="#7C1FFF" />,
         <SiAdobeaudition key="audition" size={24} color="green" />,
@@ -21,27 +35,21 @@ function ProyectosAud() {
         "Travel filmmaking La Joya bella de Bolivia Hola de nuevo amigos este joven de 18 años esta muy ancioso de que puedan ver el nuevo video de Tupiza. I dream in my life Capítulo 3",
       tags: ["Documental", "Cine", "VFX"]
     },
-    {
-      imgSrc: "https://i.imgur.com/1k5b2aH.png",
-      title: "Gestión de Incidencias",
+   {
+      imgSrc: "https://img.youtube.com/vi/uy-AhG5sg9Q/hqdefault.jpg", // Miniatura de YouTube
+      videoUrl: "https://www.youtube.com/watch?v=uy-AhG5sg9Q&t=9s", // Link al video
+      title: "Villazón Cinematic - Es magnífico 🤩",
       logos: [
-        <SiAdobepremierepro key="premiere" size={24} color="#9999FF" />,
-        <SiAdobeaudition key="audition" size={24} color="#00FFCC" />,
-        <SiAdobeaftereffects key="aftereffects" size={24} color="#AE6EEB" />,
-        <SiBlender key="blender" size={24} color="#F5792A" />
+        <SiAdobepremierepro key="premiere" size={24} color="#7C1FFF" />,
+        <SiAdobeaudition key="audition" size={24} color="green" />,
+        <SiAdobeaftereffects key="aftereffects" size={24} color="#C154FF" />,
+        <SiAdobephotoshop key="photoshop" size={24} color="blue" />,
+        <SiBlender key="blender" size={24} color="#FF7300" />,
       ],
       description:
-        "Herramienta para registrar, dar seguimiento y resolver incidencias en proyectos de desarrollo, facilitando la comunicación y el control de tareas.",
-      tags: ["Incidencias", "Gestión", "Proyectos"]
+        "Travel filmmaking La Joya bella de Bolivia Hola de nuevo amigos este joven de 18 años esta muy ancioso de que puedan ver el nuevo video de Tupiza. I dream in my life Capítulo 3",
+      tags: ["Documental", "Cine", "VFX"]
     },
-    {
-      imgSrc: "https://i.imgur.com/1k5b2aH.png",
-      title: "Panel de Métricas",
-      logos: [<FaNodeJs key="node" size={24} color="#68a063" />, <FaReact key="react2" size={24} color="#61dafb" />],
-      description:
-        "Visualiza métricas clave de tus proyectos de software en tiempo real, ayudando a la toma de decisiones y mejora continua.",
-      tags: ["Métricas", "Dashboard", "Proyectos"]
-    }
   ];
 
   return (
