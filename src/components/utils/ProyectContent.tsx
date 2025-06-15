@@ -56,7 +56,7 @@ export default function ProyectContent({
           {tags.map((tag) => (
             <span
               key={tag}
-              className="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded"
+              className="bg-cyan-800 text-gray-50 text-xs px-2 py-1 rounded"
             >
               {tag}
             </span>

@@ -12,9 +12,9 @@ function ProyectosAud() {
       title: "Tipiza Cinematic",
       logos: [
         <SiAdobepremierepro key="premiere" size={24} color="#7C1FFF" />,
-        <SiAdobeaudition key="audition" size={24} color="#00FFD0" />,
+        <SiAdobeaudition key="audition" size={24} color="green" />,
         <SiAdobeaftereffects key="aftereffects" size={24} color="#C154FF" />,
-        <SiAdobephotoshop key="photoshop" size={24} color="#00D8FF" />,
+        <SiAdobephotoshop key="photoshop" size={24} color="blue" />,
         <SiBlender key="blender" size={24} color="#FF7300" />,
       ],
       description:
