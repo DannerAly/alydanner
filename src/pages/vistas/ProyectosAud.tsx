@@ -1,6 +1,6 @@
 import ProyectContent from "../../components/utils/ProyectContent";
 import { FaReact, FaNodeJs } from "react-icons/fa";
-import { SiAdobeaftereffects, SiAdobepremierepro, SiAdobeaudition, SiBlender } from "react-icons/si";
+import { SiAdobeaftereffects, SiAdobepremierepro, SiAdobeaudition, SiBlender, SiAdobephotoshop } from "react-icons/si";
 import Modelo3D from "../../components/Modelo3D";
 
 
@@ -14,7 +14,8 @@ function ProyectosAud() {
         <SiAdobepremierepro key="premiere" size={24} color="#9999FF" />,
         <SiAdobeaudition key="audition" size={24} color="#00E8C3" />,
         <SiAdobeaftereffects key="aftereffects" size={24} color="#AE7FE2" />,
-        <SiBlender key="blender" size={24} color="#F5792A" />
+        <SiAdobephotoshop key="photoshop" size={24} color="#31A8FF" />,
+        <SiBlender key="blender" size={24} color="#F5792A" />,
       ],
       description:
         "Travel filmmaking La Joya bella de Bolivia Hola de nuevo amigos este joven de 18 años esta muy ancioso de que puedan ver el nuevo video de Tupiza. I dream in my life Capítulo 3",
