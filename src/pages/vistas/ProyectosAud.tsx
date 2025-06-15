@@ -11,11 +11,11 @@ function ProyectosAud() {
       videoUrl: "https://youtu.be/cNuv9UgGNY8", // Link al video
       title: "Tipiza Cinematic",
       logos: [
-        <SiAdobepremierepro key="premiere" size={24} color="#9999FF" />,
-        <SiAdobeaudition key="audition" size={24} color="#00E8C3" />,
-        <SiAdobeaftereffects key="aftereffects" size={24} color="#AE7FE2" />,
-        <SiAdobephotoshop key="photoshop" size={24} color="#31A8FF" />,
-        <SiBlender key="blender" size={24} color="#F5792A" />,
+        <SiAdobepremierepro key="premiere" size={24} color="#7C1FFF" />,
+        <SiAdobeaudition key="audition" size={24} color="#00FFD0" />,
+        <SiAdobeaftereffects key="aftereffects" size={24} color="#C154FF" />,
+        <SiAdobephotoshop key="photoshop" size={24} color="#00D8FF" />,
+        <SiBlender key="blender" size={24} color="#FF7300" />,
       ],
       description:
         "Travel filmmaking La Joya bella de Bolivia Hola de nuevo amigos este joven de 18 años esta muy ancioso de que puedan ver el nuevo video de Tupiza. I dream in my life Capítulo 3",
@@ -47,7 +47,7 @@ function ProyectosAud() {
   return (
     <>
       <div className="flex flex-col gap-7 items-center mt-4">
-         <Modelo3D url="/maximo.glb" width="400px" height="100%" />
+        <Modelo3D url="/maximo.glb" width="400px" height="100%" />
         <h1 className="text-zinc-50 font-bold">Proyectos Audiovisuales</h1>
         <div className="flex flex-col md:flex-row flex-wrap gap-10 items-center">
           {proyectos.map((proyecto, idx) => (
