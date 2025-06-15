@@ -54,7 +54,7 @@ function ProyectosAud() {
 
   return (
     <>
-      <div className="flex flex-col gap-7 items-center mt-4">
+      <div className="flex flex-col gap-7 items-center mt-4 mb-35">
         <Modelo3D url="/maximo.glb" width="400px" height="100%" />
         <h1 className="text-zinc-50 font-bold">Proyectos Audiovisuales</h1>
         <div className="flex flex-col md:flex-row flex-wrap gap-10 items-center">
