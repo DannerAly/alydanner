@@ -35,7 +35,7 @@ function ProyectosAud() {
         "Travel filmmaking La Joya bella de Bolivia Hola de nuevo amigos este joven de 18 años esta muy ancioso de que puedan ver el nuevo video de Tupiza. I dream in my life Capítulo 3",
       tags: ["Documental", "Cine", "VFX"]
     },
-   {
+    {
       imgSrc: "https://img.youtube.com/vi/uy-AhG5sg9Q/hqdefault.jpg", // Miniatura de YouTube
       videoUrl: "https://www.youtube.com/watch?v=uy-AhG5sg9Q&t=9s", // Link al video
       title: "Villazón Cinematic - Es magnífico 🤩",
@@ -54,9 +54,11 @@ function ProyectosAud() {
 
   return (
     <>
-      <div className="flex flex-col gap-7 items-center mt-4 mb-35">
+      <div className="flex flex-col gap-7 items-center mt-10 mb-35">
+
+        <h1 className="text-zinc-50 font-bold text-2xl">Proyectos Audiovisuales</h1>
         <Modelo3D url="/maximo.glb" width="400px" height="100%" />
-        <h1 className="text-zinc-50 font-bold">Proyectos Audiovisuales</h1>
+        <h2 className="text-zinc-50 font-bold text-1xl">Serie: I dream in my life</h2>
         <div className="flex flex-col md:flex-row flex-wrap gap-10 items-center">
           {proyectos.map((proyecto, idx) => (
             <ProyectContent key={idx} {...proyecto} />
