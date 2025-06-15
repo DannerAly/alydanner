@@ -1,11 +1,13 @@
 import { ReactNode } from "react";
+import { FaPlayCircle } from "react-icons/fa";
 
 type ProyectContentProps = {
   imgSrc: string;
   title: string;
-  logos?: ReactNode[]; // Cambiado a ReactNode[]
+  logos?: ReactNode[];
   description: string;
   tags?: string[];
+  videoUrl?: string;
 };
 
 export default function ProyectContent({
@@ -14,10 +16,30 @@ export default function ProyectContent({
   logos = [],
   description,
   tags = [],
+  videoUrl,
 }: ProyectContentProps) {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
-      <img src={imgSrc} alt={title} className="w-full h-40 object-cover" />
+    <div className="bg-zinc-50 rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
+      <div className="relative w-full">
+        {videoUrl ? (
+          <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+            <img
+              src={imgSrc}
+              alt={title}
+              className="w-full object-cover h-40 block"
+            />
+            <span className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <FaPlayCircle className="text-white text-6xl drop-shadow-lg opacity-80" />
+            </span>
+          </a>
+        ) : (
+          <img
+            src={imgSrc}
+            alt={title}
+            className="w-full h-80 object-cover block"
+          />
+        )}
+      </div>
       <div className="p-4">
         <h2 className="text-lg font-bold mb-2">{title}</h2>
         {logos.length > 0 && (
