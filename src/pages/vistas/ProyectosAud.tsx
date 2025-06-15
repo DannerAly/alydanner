@@ -11,9 +11,9 @@ function ProyectosAud() {
       videoUrl: "https://youtu.be/cNuv9UgGNY8", // Link al video
       title: "Tipiza Cinematic",
       logos: [
-        <SiAdobepremierepro key="premiere" size={24} color="blue" />,
-        <SiAdobeaudition key="audition" size={24} color="green" />,
-        <SiAdobeaftereffects key="aftereffects" size={24} color="purple" />,
+        <SiAdobepremierepro key="premiere" size={24} color="#9999FF" />,
+        <SiAdobeaudition key="audition" size={24} color="#00E8C3" />,
+        <SiAdobeaftereffects key="aftereffects" size={24} color="#AE7FE2" />,
         <SiBlender key="blender" size={24} color="#F5792A" />
       ],
       description:
