@@ -29,7 +29,7 @@ export default function ProyectContent({
               className="w-full object-cover h-40 block"
             />
             <span className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <FaPlayCircle className="text-white text-6xl drop-shadow-lg opacity-80" />
+              <FaPlayCircle className="text-white text-4xl drop-shadow-lg opacity-80" />
             </span>
           </a>
         ) : (
