@@ -17,8 +17,8 @@ function ProyectosAud() {
         <SiBlender key="blender" size={24} color="#FF7300" />,
       ],
       description:
-        "Herramienta para registrar, dar seguimiento y resolver incidencias en proyectos de desarrollo, facilitando la comunicación y el control de tareas.",
-      tags: ["Incidencias", "Gestión", "Proyectos"]
+        "En este proyecto exploto mis habilidades técnicas para lograr mostrar Sucre de una forma cinemática/profesional con mi estilo y creatividad.",
+      tags: ["Documental", "Cine", "VFX", "Animación"]
     },
     {
       imgSrc: "https://img.youtube.com/vi/cNuv9UgGNY8/hqdefault.jpg", // Miniatura de YouTube
