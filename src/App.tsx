@@ -1,4 +1,5 @@
-import { BrowserRouter as BrowserRouter } from "react-router-dom";
+//import { BrowserRouter as BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "./App.css";
 
 import Particles from "./components/fondo/Particles";
@@ -31,9 +32,9 @@ function App() {
       </div>
 
 
-      <BrowserRouter>
-        <AppRoutes/>
-      </BrowserRouter>
+      <HashRouter>
+        <AppRoutes />
+      </HashRouter>
     </>
   );
 }
