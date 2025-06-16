@@ -17,7 +17,6 @@ export default function AppRoutes() {
                 <Route path="/sobreAly" element={<SobreMi />} />
                 <Route path="/proyectos/web" element={<ProyectosDev />} />
                 <Route path="/proyectos/video" element={<ProyectosAud />} />
-                
                 <Route path="/contacto" element={<Contacto />} />
                 
             </Route>
