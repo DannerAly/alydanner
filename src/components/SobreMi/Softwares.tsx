@@ -1,8 +1,9 @@
 import {
     SiHtml5, SiCss3, SiJavascript, SiTypescript, SiNodedotjs, SiMysql,
-    SiReact, SiAstro, SiNextdotjs, SiTailwindcss, SiBootstrap, SiExpress, SiPostgresql,
+    SiReact, SiNextdotjs, SiTailwindcss, SiBootstrap, SiExpress, SiPostgresql,
     SiGit, SiNestjs, SiNotion, SiFigma, SiAdobexd, SiAdobeillustrator, SiAdobeaftereffects, SiAdobepremierepro,
-    SiAdobeaudition, SiAdobephotoshop, SiBlender, SiPostman
+    SiAdobeaudition, SiAdobephotoshop, SiBlender, SiPostman,
+    SiPhp
 } from "react-icons/si";
 
 // Componente para mostrar el PNG de VS Code
@@ -34,6 +35,7 @@ const categories = [
             { icon: <SiJavascript className="text-yellow-300" />, label: "JavaScript" },
             { icon: <SiTypescript className="text-blue-400" />, label: "TypeScript" },
             { icon: <SiNodedotjs className="text-green-600" />, label: "NodeJS" },
+            { icon: <SiPhp className="text-blue-600" />, label: "PHP" },
 
         ],
     },
@@ -41,7 +43,6 @@ const categories = [
         title: "Frameworks y Utils",
         items: [
             { icon: <SiReact className="text-cyan-400" />, label: "React" },
-            { icon: <SiAstro className="text-orange-400" />, label: "Astro" },
             { icon: <SiNextdotjs className="text-white" />, label: "Next.Js" },
             { icon: <SiTailwindcss className="text-cyan-300" />, label: "Tailwind" },
             { icon: <SiBootstrap className="text-purple-500" />, label: "Bootstrap" },
