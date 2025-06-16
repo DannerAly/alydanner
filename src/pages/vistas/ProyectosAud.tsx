@@ -30,7 +30,6 @@ function ProyectosAud() {
         <SiAdobeaudition key="audition" size={24} color="green" />,
         <SiAdobeaftereffects key="aftereffects" size={24} color="#C154FF" />,
         <SiAdobephotoshop key="photoshop" size={24} color="blue" />,
-        <SiBlender key="blender" size={24} color="#FF7300" />,
       ],
       description:
         "Este es el trailer de Sucre Cinematic, un video creativo y profesional que muestra la belleza de Sucre.",
@@ -92,7 +91,7 @@ function ProyectosAud() {
         <Modelo3D url="/maximo.glb" width="400px" height="100%" />
         {/*Seria I dream in my life */}
         <h2 className="text-zinc-50 font-bold text-1xl">Serie: I dream in my life</h2>
-        <div className="flex flex-col md:flex-row flex-wrap gap-10 items-center">
+        <div className="flex flex-col md:flex-row flex-wrap gap-5 md:w-4/5 items-center">
           {proyectos.map((proyecto, idx) => (
             <ProyectContent key={idx} {...proyecto} />
           ))}
