@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 const timelineItems = [
   { date: "2002", text: "Nació en Potosí - Bolivia" },
   { date: "2017", text: "Inició su carrera en Redes Sociales" },
-  { date: "2019", text: "Inició como productor audiovisual independiente." },
-  { date: "2021", text: "Comenzó a estudiar Ing. de Sistemas y Derecho" },
-  { date: "2025", text: "Trabaja como Freelancer" },
+  { date: "2019", text: "Inició como filmmaker independiente." },
+  { date: "2021", text: "Comenzó a estudiar Ing. de Sistemas" },
+  { date: "2025", text: "Trabaja como Desarrollador Web & Filmmaker" },
 ];
 
 export default function TimelineVertical() {
