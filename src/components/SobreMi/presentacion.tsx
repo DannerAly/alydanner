@@ -1,5 +1,5 @@
 
-import Aly from '../../assets/images/alydannerdif.png';
+import Aly from '../../assets/images/aly.png';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from "react-icons/fa";
 export default function Presentacion() {
     return (
