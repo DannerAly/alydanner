@@ -3,7 +3,14 @@ import {
     SiReact, SiNextdotjs, SiTailwindcss, SiBootstrap, SiExpress, SiPostgresql,
     SiGit, SiNestjs, SiNotion, SiFigma, SiAdobexd, SiAdobeillustrator, SiAdobeaftereffects, SiAdobepremierepro,
     SiAdobeaudition, SiAdobephotoshop, SiBlender, SiPostman,
-    SiPhp
+    SiPhp,
+    SiLangchain,
+    SiPython,
+    SiFastapi,
+    SiGithub,
+    SiDocker,
+    SiGooglegemini,
+    SiGooglecloud
 } from "react-icons/si";
 
 // Componente para mostrar el PNG de VS Code
@@ -30,11 +37,11 @@ const categories = [
     {
         title: "Lenguajes",
         items: [
-            { icon: <SiHtml5 className="text-orange-500" />, label: "HTML" },
-            { icon: <SiCss3 className="text-blue-500" />, label: "CSS" },
-            { icon: <SiJavascript className="text-yellow-300" />, label: "JavaScript" },
+            //     { icon: <SiHtml5 className="text-orange-500" />, label: "HTML" },
+            //     { icon: <SiCss3 className="text-blue-500" />, label: "CSS" },
+            //     { icon: <SiJavascript className="text-yellow-300" />, label: "JavaScript" },
+            { icon: <SiPython />, label: "Python" },
             { icon: <SiTypescript className="text-blue-400" />, label: "TypeScript" },
-            { icon: <SiNodedotjs className="text-green-600" />, label: "NodeJS" },
             { icon: <SiPhp className="text-blue-600" />, label: "PHP" },
 
         ],
@@ -42,26 +49,33 @@ const categories = [
     {
         title: "Frameworks y Utils",
         items: [
-            { icon: <SiReact className="text-cyan-400" />, label: "React" },
-            { icon: <SiNextdotjs className="text-white" />, label: "Next.Js" },
-            { icon: <SiTailwindcss className="text-cyan-300" />, label: "Tailwind" },
-            { icon: <SiBootstrap className="text-purple-500" />, label: "Bootstrap" },
-            { icon: <SiExpress className="text-white" />, label: "Express" },
-            { icon: <SiNestjs className="text-pink-700" />, label: "NestJS" },
+            { icon: <SiLangchain className="text-white" />, label: "LangChain" },
             
+            { icon: <SiGooglegemini className="text-yellow-400" />, label: "API Gemini" },
+            { icon: <SiFastapi className="text-emerald-500" />, label: "FastAPI" },
+            { icon: <SiGooglecloud className="text-blue-400" />, label: "Google Cloud" },
+            { icon: <SiNestjs className="text-pink-700" />, label: "NestJS" },
+            { icon: <SiReact className="text-cyan-400" />, label: "React" },
+            { icon: <SiNodedotjs className="text-green-600" />, label: "NodeJS" },
+            //   { icon: <SiNextdotjs className="text-white" />, label: "Next.Js" },
+            { icon: <SiTailwindcss className="text-cyan-300" />, label: "Tailwind" },
+            //    { icon: <SiBootstrap className="text-purple-500" />, label: "Bootstrap" },
+            { icon: <SiExpress className="text-white" />, label: "Express" },
             { icon: <SiPostgresql className="text-blue-400" />, label: "PostgreSQL" },
-            { icon: <SiMysql />, label: "MySQL" },
+//            { icon: <SiMysql />, label: "MySQL" },
+            { icon: <SiDocker className="text-blue-400" />, label: "Docker" },
         ],
     },
     {
         title: "Herramientas",
         items: [
             { icon: <SiGit className="text-orange-600" />, label: "Git" },
+            { icon: <SiGithub className="text-white" />, label: "GitHub" },
             { icon: <VSCodePNG />, label: "VS Code" },
             { icon: <SiPostman className="text-orange-500" />, label: "Postman" },
             { icon: <SiNotion className="text-white" />, label: "Notion" },
-            { icon: <SiFigma className="text-white" />, label: "Figma" },
-            { icon: <SiAdobexd className="text-pink-600" />, label: "Adobe XD" },
+          //  { icon: <SiFigma className="text-white" />, label: "Figma" },
+          //  { icon: <SiAdobexd className="text-pink-600" />, label: "Adobe XD" },
             { icon: <SiAdobeillustrator className="text-yellow-400" />, label: "Adobe Illustrator" },
             { icon: <SiAdobeaftereffects className="text-purple-500" />, label: "Adobe After Effects" },
             { icon: <SiAdobepremierepro className="text-indigo-500" />, label: "Adobe Premiere" },

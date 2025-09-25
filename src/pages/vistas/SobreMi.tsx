@@ -39,7 +39,7 @@ function SobreMi() {
         <div className="z-10 w-full md:w-[400px] flex flex-col items-center ">
           <div className="mx-10 md:mx-0">
             <InfoCard>
-              Hola, ¡Soy un <b>Desarrollador Web</b> & <b>Filmmaker</b> independiente con sede en <b>Bolivia</b>!
+              Hola, amor hacer <b>Agentes de IA</b> y <b>Producir Videos</b> de <b>Tecnología</b> en Internet!
             </InfoCard>
           </div>
           <Presentacion />
