@@ -7,7 +7,7 @@ export default function Presentacion() {
             <div className='flex flex-col items-center md:flex-row md:items-center md:justify-end md:mt-4 md:gap-x-10'>
 
                 <div className="mt-5" >
-                    <img src={Aly} alt="" className='w-[150px] md:w-[150px]' />
+                    <img src={Aly} alt="" className='rounded-full shadow-2xl shadow-black w-[150px] md:w-[150px]' />
                 </div>
 
                 <div className="flex flex-col items-center gap-4 text-white mt-4">
