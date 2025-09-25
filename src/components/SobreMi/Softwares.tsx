@@ -1,7 +1,7 @@
 import {
-    SiHtml5, SiCss3, SiJavascript, SiTypescript, SiNodedotjs, SiMysql,
-    SiReact, SiNextdotjs, SiTailwindcss, SiBootstrap, SiExpress, SiPostgresql,
-    SiGit, SiNestjs, SiNotion, SiFigma, SiAdobexd, SiAdobeillustrator, SiAdobeaftereffects, SiAdobepremierepro,
+    SiTypescript, SiNodedotjs,
+    SiReact, SiTailwindcss, SiExpress, SiPostgresql,
+    SiGit, SiNestjs, SiNotion, SiAdobeillustrator, SiAdobeaftereffects, SiAdobepremierepro,
     SiAdobeaudition, SiAdobephotoshop, SiBlender, SiPostman,
     SiPhp,
     SiLangchain,
