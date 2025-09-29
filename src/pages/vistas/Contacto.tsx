@@ -47,9 +47,15 @@ function Contacto() {
         <h1 className="text-zinc-50 font-bold text-2xl">Contactar</h1>
 
         {showToast && (
-          <div className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50">
-            <div className="bg-gradient-to-r from-cyan-500 to-green-400 text-white px-6 py-3 rounded-xl shadow-lg font-bold text-lg animate-bounce drop-shadow-xl border-2 border-white">
-              ¡Mensaje enviado exitosamente!
+          <div className="fixed inset-0 flex items-center justify-center z-50">
+            <div className="bg-zinc-900 text-cyan-50 px-8 py-7 rounded-2xl shadow-2xl border-2 border-cyan-700 flex flex-col items-center gap-4">
+              <span className="font-bold text-xl text-center">¡Mensaje enviado exitosamente!</span>
+              <button
+                className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-2 px-6 rounded-lg transition"
+                onClick={() => setShowToast(false)}
+              >
+                OK
+              </button>
             </div>
           </div>
         )}
