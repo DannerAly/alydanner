@@ -57,7 +57,7 @@ function ProyectosDev() {
   return (
     <>
       <div className="flex flex-col gap-7 items-center mt-10 mb-35">
-        <h1 className="text-zinc-50 font-bold text-2xl">Proyectos Desarrollo</h1>
+        <h1 className="text-zinc-50 font-bold text-2xl">Proyectos DEV</h1>
          <Modelo3D url="/maximo.glb" width="400px" height="100%" />
         <div className="flex flex-col md:flex-row flex-wrap gap-5 md:w-4/5 items-center">
           {proyectosDev.map((proyecto, idx) => (

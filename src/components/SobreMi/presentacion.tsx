@@ -13,7 +13,7 @@ export default function Presentacion() {
                 <div className="flex flex-col items-center gap-4 text-white mt-4">
                     <div className='flex flex-col items-center'>
                         <h1 className="text-2xl font-bold">Aly Danner</h1>
-                        <p className="text-base text-[#12F2F2] text-center">Software Developer/ Filmmaker</p>
+                        <p className="text-base text-[#12F2F2] text-center">Software Developer / Filmmaker</p>
                     </div>
                     <div className='flex flex-row gap-3'>
                         <div className='videos tarjeta flex flex-row gap-3'>
