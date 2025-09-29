@@ -7,7 +7,7 @@ function ProyectosDev() {
     {
       imgsSrcs: [
         "https://media.licdn.com/dms/image/v2/D4E22AQHv6R_RoKs5_w/feedshare-shrink_1280/B4EZfDtqv.GcAk-/0/1751335220443?e=1761782400&v=beta&t=16ARyQuaTWsdnq2KtaMKPyLFdulR2R1Vfc4OC1pZWYo",
-        "https://media.licdn.com/dms/image/v2/D4E22AQF9tLJD4Z7TLQ/feedshare-shrink_800/B4EZfDtqvZHgAo-/0/1751335219541?e=1761782400&v=beta&t=5iTwagzRrNibw4A3qe1VUuLTYBt8jERZWvP6T2_jrro",
+        "https://i.imgur.com/2O2Ohg5.png",
         "https://media.licdn.com/dms/image/v2/D4E22AQERKweEwmzDww/feedshare-shrink_1280/B4EZfDtqwOHwAk-/0/1751335225233?e=1761782400&v=beta&t=1gEk4vbOrVwx0A-BRKxFoej8BMJ3-Tnp4gjTixB6oFc"
       
       ],
@@ -22,6 +22,21 @@ function ProyectosDev() {
       description:
         "App de redacción de Informes médicos impulsados con IA. Ganadora del Primer lugar en la Hackathon Build with AI Bolivia 2025.",
       tags: ["Gemini AI", "NestJS", "FastAPI"]
+    },
+
+    {
+      imgsSrcs: [
+        "https://i.imgur.com/V6fRBJS.png"
+      ],
+      title: "Trivia APP - PBACC",
+      logos: [
+        <SiReact key="react" size={24} color="#61DAFB" />,
+        <SiTailwindcss key="tailwind" size={24} color="#06B6D4" />,
+        <SiVercel key="vercel" size={24} color="#000000" />,
+      ],
+      description:
+        "Aplicación web de trivia desarrollada para la Plataforma Boliviana de Acción Contra el Cambio Climático PBACC.",
+      tags: ["Cine", "VFX", "3D"]
     },
     {
       imgsSrcs: [
