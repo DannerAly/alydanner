@@ -6,7 +6,6 @@ function Contacto() {
     email: "",
     message: "",
   })
-  const [enviado, setEnviado] = useState(false);
   const [showToast, setShowToast] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -25,7 +24,6 @@ function Contacto() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
     });
-    setEnviado(true);
     setShowToast(true);
     setForm({ name: "", email: "", message: "" });
   }
