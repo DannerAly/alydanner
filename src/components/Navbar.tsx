@@ -122,14 +122,14 @@ const Navbar = () => {
                   className="block px-2 py-1  mt-3 rounded hover:bg-cyan-400 hover:text-white transition"
                   onClick={() => { setOpen(false); setSubMenuOpen(false); }}
                 >
-                  Desarrollo de Apps
+                  Desarrollo
                 </Link>
                 <Link
                   to="/proyectos/video"
                   className="block px-2 py-1 rounded hover:bg-cyan-400 hover:text-white transition"
                   onClick={() => { setOpen(false); setSubMenuOpen(false); }}
                 >
-                  Produccion Audiovisual
+                  Audiovisual
                 </Link>
               </motion.div>
             )}

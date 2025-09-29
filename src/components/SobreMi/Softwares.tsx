@@ -13,7 +13,6 @@ import {
     SiGooglecloud
 } from "react-icons/si";
 
-// Componente para mostrar el PNG de VS Code
 const VSCodePNG = () => (
     <img
         src="/vscode.png"
@@ -23,7 +22,6 @@ const VSCodePNG = () => (
     />
 );
 
-// Componente para mostrar el WEBP de DaVinci Resolve
 const DaVinciResolveWEBP = () => (
     <img
         src="/davinci.webp"

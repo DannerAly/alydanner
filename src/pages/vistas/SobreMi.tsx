@@ -76,7 +76,7 @@ function SobreMi() {
             )}
           </AnimatePresence>
         </div>
-        <Button to="/contactar">Contactar</Button>
+        <Button to="/contacto">Contactar</Button>
       </div>
 
       <div className="flex flex-col items-center">
