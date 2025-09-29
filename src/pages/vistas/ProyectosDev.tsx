@@ -1,6 +1,5 @@
-import { SiAdobeaftereffects, SiAdobepremierepro, SiAdobeaudition, SiBlender, SiAdobephotoshop, SiFastapi, SiNestjs, SiFlutter, SiGooglegemini, SiPython, SiReact, SiTailwindcss, SiVercel } from "react-icons/si";
+import { SiFastapi, SiNestjs, SiFlutter, SiGooglegemini, SiPython, SiReact, SiTailwindcss, SiVercel } from "react-icons/si";
 import ProyectContentDev from "../../components/utils/ProyectContentDev";
-import sucreTrailer from "../../assets/images/miniaturas/SucreTrailer.png"; // Asegúrate de que la ruta sea correcta
 import Modelo3D from "../../components/Modelo3D";
 
 function ProyectosDev() {
