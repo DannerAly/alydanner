@@ -5,7 +5,7 @@ const timelineItems = [
   { date: "2017", text: "Inició su carrera en Redes Sociales" },
   { date: "2019", text: "Inició como filmmaker independiente." },
   { date: "2021", text: "Comenzó a estudiar Ing. de Sistemas" },
-  { date: "2025", text: "Desarrolla soluciones de AI en DATEC" },
+  { date: "2025", text: "Desarrolla soluciones con AI en DATEC" },
 ];
 
 export default function TimelineVertical() {
