@@ -58,20 +58,6 @@ function ProyectosDev() {
         "Aplicación web de trivia desarrollada para la Plataforma Boliviana de Acción Contra el Cambio Climático PBACC.",
       tags: ["Cine", "VFX", "3D"]
     },
-    {
-      imgsSrcs: [
-        "https://img.youtube.com/vi/ABXvrLiqeEE/hqdefault.jpg"
-      ],
-      title: "Trivia APP - PBACC",
-      logos: [
-        <SiReact key="react" size={24} color="#61DAFB" />,
-        <SiTailwindcss key="tailwind" size={24} color="#06B6D4" />,
-        <SiVercel key="vercel" size={24} color="#000000" />,
-      ],
-      description:
-        "Aplicación web de trivia desarrollada para la Plataforma Boliviana de Acción Contra el Cambio Climático PBACC.",
-      tags: ["Cine", "VFX", "3D"]
-    },
   ];
 
   return (
