@@ -26,6 +26,26 @@ function ProyectosDev() {
 
     {
       imgsSrcs: [
+        "https://media.licdn.com/dms/image/v2/D4E22AQHv6R_RoKs5_w/feedshare-shrink_1280/B4EZfDtqv.GcAk-/0/1751335220443?e=1761782400&v=beta&t=16ARyQuaTWsdnq2KtaMKPyLFdulR2R1Vfc4OC1pZWYo",
+        "https://i.imgur.com/2O2Ohg5.png",
+        "https://media.licdn.com/dms/image/v2/D4E22AQERKweEwmzDww/feedshare-shrink_1280/B4EZfDtqwOHwAk-/0/1751335225233?e=1761782400&v=beta&t=1gEk4vbOrVwx0A-BRKxFoej8BMJ3-Tnp4gjTixB6oFc"
+      
+      ],
+      title: "Agro Smarth",
+      logos: [
+        <SiNestjs key="nestjs" size={24} color="#E0234E" />,
+        <SiFastapi key="fastapi" size={24} color="#009688" />,
+        <SiFlutter key="flutter" size={24} color="#02569B" />,
+        <SiGooglegemini key="gemini" size={24} color="#4285F4" />,
+        <SiPython key="python" size={24} color="#3776AB" />,
+      ],
+      description:
+        "Sistema de automatizacion y monitoreo de cultivos, Ganador de la Hackaton USFX Tech CCBOL 2024 y el concurso de proyectos de Innovacion 2024 organizado por INIAF Bolivia.",
+      tags: ["NestJS", "React"]
+    },
+
+    {
+      imgsSrcs: [
         "https://i.imgur.com/V6fRBJS.png"
       ],
       title: "Trivia APP - PBACC",
