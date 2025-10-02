@@ -38,10 +38,10 @@ export default function ProyectContentDev({
   const goToNext = () => setCurrent((prev) => (prev + 1) % length);
 
   return (
-    <div className="bg-zinc-50/80 rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
-      <div className="relative w-full h-56 flex items-center justify-center">
+    <div className="bg-zinc-50/80 rounded-lg shadow-md overflow-hidden max-w-xs md:max-w-md lg:max-w-lg mx-auto">
+      <div className="relative w-full h-56 md:h-72 lg:h-96 flex items-center justify-center">
         {/* Carrusel deslizante */}
-        <div className="overflow-hidden w-full h-56 rounded-lg">
+        <div className="overflow-hidden w-full h-56 md:h-72 lg:h-96 rounded-lg">
           <div
             className="flex w-full h-56 transition-transform duration-700"
             style={{ transform: `translateX(-${current * 100}%)` }}
@@ -51,7 +51,7 @@ export default function ProyectContentDev({
                 key={idx}
                 src={src}
                 alt={title}
-                className="w-full h-56 object-cover flex-shrink-0"
+                className="w-full h-56 md:h-72 lg:h-96 object-cover flex-shrink-0"
                 style={{ borderRadius: "0.5rem" }}
               />
             ))}
@@ -95,7 +95,7 @@ export default function ProyectContentDev({
       </div>
       <div className="p-4">
         <div className="flex items-center justify-between mb-2">
-          <h2 className="text-lg font-bold">{title}</h2>
+          <h2 className="text-lg md:text-xl lg:text-2xl font-bold">{title}</h2>
           {url && (
             <a
               href={url}
