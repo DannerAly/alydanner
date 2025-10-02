@@ -50,7 +50,7 @@ const Navbar = () => {
                     className="block px-4 py-2 hover:bg-cyan-400 hover:text-white transition"
                     onClick={() => setSubMenuOpen(false)}
                   >
-                    Desarrollo
+                    Software
                   </Link>
                   <Link
                     to="/proyectos/video"
@@ -122,7 +122,7 @@ const Navbar = () => {
                   className="block px-2 py-1  mt-3 rounded hover:bg-cyan-400 hover:text-white transition"
                   onClick={() => { setOpen(false); setSubMenuOpen(false); }}
                 >
-                  Desarrollo
+                  Software
                 </Link>
                 <Link
                   to="/proyectos/video"
