@@ -6,6 +6,7 @@ interface ProyectContentProps {
   logos?: ReactNode[];
   description: string;
   tags?: string[];
+  url?: string;
 }
 
 export default function ProyectContentDev({
@@ -14,6 +15,7 @@ export default function ProyectContentDev({
   logos = [],
   description,
   tags = [],
+  url,
 }: ProyectContentProps) {
   // Carrusel automático y manual con transición deslizante
   const [current, setCurrent] = useState(0);
@@ -92,7 +94,19 @@ export default function ProyectContentDev({
         </div>
       </div>
       <div className="p-4">
-        <h2 className="text-lg font-bold mb-2">{title}</h2>
+        <div className="flex items-center justify-between mb-2">
+          <h2 className="text-lg font-bold">{title}</h2>
+          {url && (
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm bg-cyan-800 hover:bg-cyan-900 text-white px-3 py-1 rounded-lg transition"
+            >
+              Visitar
+            </a>
+          )}
+        </div>
         {logos.length > 0 && (
           <div className="flex items-center space-x-2 mb-2">
             {logos.map((logo, idx) => (

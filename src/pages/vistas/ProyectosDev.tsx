@@ -1,4 +1,4 @@
-import { SiFastapi, SiNestjs, SiFlutter, SiGooglegemini, SiPython, SiReact, SiTailwindcss, SiVercel } from "react-icons/si";
+import { SiFastapi, SiNestjs, SiFlutter, SiGooglegemini, SiPython, SiReact, SiTailwindcss, SiVercel, SiNextdotjs, SiMake } from "react-icons/si";
 import ProyectContentDev from "../../components/utils/ProyectContentDev";
 import Modelo3D from "../../components/Modelo3D";
 
@@ -9,7 +9,7 @@ function ProyectosDev() {
         "https://media.licdn.com/dms/image/v2/D4E22AQHv6R_RoKs5_w/feedshare-shrink_1280/B4EZfDtqv.GcAk-/0/1751335220443?e=1761782400&v=beta&t=16ARyQuaTWsdnq2KtaMKPyLFdulR2R1Vfc4OC1pZWYo",
         "https://i.imgur.com/2O2Ohg5.png",
         "https://media.licdn.com/dms/image/v2/D4E22AQERKweEwmzDww/feedshare-shrink_1280/B4EZfDtqwOHwAk-/0/1751335225233?e=1761782400&v=beta&t=1gEk4vbOrVwx0A-BRKxFoej8BMJ3-Tnp4gjTixB6oFc"
-      
+
       ],
       title: "Juli AI",
       logos: [
@@ -26,18 +26,16 @@ function ProyectosDev() {
 
     {
       imgsSrcs: [
-        "https://media.licdn.com/dms/image/v2/D4E22AQHv6R_RoKs5_w/feedshare-shrink_1280/B4EZfDtqv.GcAk-/0/1751335220443?e=1761782400&v=beta&t=16ARyQuaTWsdnq2KtaMKPyLFdulR2R1Vfc4OC1pZWYo",
-        "https://i.imgur.com/2O2Ohg5.png",
-        "https://media.licdn.com/dms/image/v2/D4E22AQERKweEwmzDww/feedshare-shrink_1280/B4EZfDtqwOHwAk-/0/1751335225233?e=1761782400&v=beta&t=1gEk4vbOrVwx0A-BRKxFoej8BMJ3-Tnp4gjTixB6oFc"
-      
+        "https://media.licdn.com/dms/image/v2/D4D22AQF2LpBf_usdCQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1732148427625?e=1762387200&v=beta&t=mPYtYsRV_J6BzICknpj0G9b4qohAAo-5JNGCAis7HWs",
+        "https://media.licdn.com/dms/image/v2/D4D22AQHyqf4An6xgcw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1732147794575?e=1762387200&v=beta&t=ZiuNCASl5x_UfSTGKSyXN04oVV1YLD6BVDXC7LU0dNE",
+        "https://media.licdn.com/dms/image/v2/D4D22AQENkAH3xnGDxw/feedshare-shrink_1280/feedshare-shrink_1280/0/1732147786296?e=1762387200&v=beta&t=96HeG-2dh0CiuwdlWRKjtlrQIaP539jsKBcaHy0L2AE",
+        "https://media.licdn.com/dms/image/v2/D4D22AQHjQBBdF5FhEA/feedshare-shrink_800/feedshare-shrink_800/0/1732148437980?e=1762387200&v=beta&t=U-PA8tW1jIrKPBPA7LYXPSWExQFR2timb9gLuB6cNsI",
       ],
       title: "Agro Smarth",
       logos: [
         <SiNestjs key="nestjs" size={24} color="#E0234E" />,
-        <SiFastapi key="fastapi" size={24} color="#009688" />,
-        <SiFlutter key="flutter" size={24} color="#02569B" />,
         <SiGooglegemini key="gemini" size={24} color="#4285F4" />,
-        <SiPython key="python" size={24} color="#3776AB" />,
+        <SiNextdotjs key="nestjs" size={24} color="#000000" />,
       ],
       description:
         "Sistema de automatizacion y monitoreo de cultivos, Ganador de la Hackaton USFX Tech CCBOL 2024 y el concurso de proyectos de Innovacion 2024 organizado por INIAF Bolivia.",
@@ -56,7 +54,42 @@ function ProyectosDev() {
       ],
       description:
         "Aplicación web de trivia desarrollada para la Plataforma Boliviana de Acción Contra el Cambio Climático PBACC.",
-      tags: ["Cine", "VFX", "3D"]
+      tags: ["Cine", "VFX", "3D"],
+      url: "https://triviastands.vercel.app/"
+    },
+
+    {
+      imgsSrcs: [
+        "https://i.imgur.com/Cl9YkKJ.png",
+        "https://i.imgur.com/TcA35bK.png",
+        "https://i.imgur.com/YXsVPyQ.png",
+      ],
+      title: "Calculadora de Ingeniería Económica",
+      logos: [
+        <SiReact key="react" size={24} color="#61DAFB" />,
+        <SiVercel key="vercel" size={24} color="#000000" />,
+      ],
+      description: "Calculadora interactiva para evaluar proyectos de inversión, desarrollada con React y Vercel.",
+      tags: ["React", "Vercel"],
+      url: "https://economic-caluladora.vercel.app/"
+    },
+    
+    {
+      imgsSrcs: [
+        "https://i.imgur.com/UWghHEP.png",
+        "https://i.imgur.com/N2hY9ds.png",
+        "https://i.imgur.com/Gb6rWTM.png",
+      ],
+      title: "Invitación Virtual - Cumpleaños",
+      logos: [
+        <SiNextdotjs key="nextjs" size={24} color="#000000" />,
+        <SiTailwindcss key="tailwind" size={24} color="#06B6D4" />,
+        <SiVercel key="vercel" size={24} color="#000000" />,
+        <SiMake key="make" size={24} color="#FF5A1F" />,
+      ],
+      description: "Invitación virtual interactiva desarrollada con Next.js y Tailwind CSS, integrada con Make para automatizar registro de invitados.",
+      tags: ["NextJS", "Tailwind", "Make"],
+      url: "https://fercho-party.vercel.app/"
     },
   ];
 
@@ -64,7 +97,7 @@ function ProyectosDev() {
     <>
       <div className="flex flex-col gap-7 items-center mt-10 mb-35">
         <h1 className="text-zinc-50 font-bold text-2xl">Proyectos DEV</h1>
-         <Modelo3D url="/maximo.glb" width="400px" height="100%" />
+        <Modelo3D url="/maximo.glb" width="400px" height="100%" />
         <div className="flex flex-col md:flex-row flex-wrap gap-5 md:w-4/5 items-center">
           {proyectosDev.map((proyecto, idx) => (
             <ProyectContentDev key={idx} {...proyecto} />
