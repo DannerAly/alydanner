@@ -7,6 +7,7 @@ interface ProyectContentProps {
   description: string;
   tags?: string[];
   url?: string;
+  medallas?: number[];
 }
 
 export default function ProyectContentDev({
@@ -16,6 +17,7 @@ export default function ProyectContentDev({
   description,
   tags = [],
   url,
+  medallas = [],
 }: ProyectContentProps) {
   // Carrusel automático y manual con transición deslizante
   const [current, setCurrent] = useState(0);
@@ -38,7 +40,7 @@ export default function ProyectContentDev({
   const goToNext = () => setCurrent((prev) => (prev + 1) % length);
 
   return (
-    <div className="bg-zinc-50/80 rounded-lg shadow-md overflow-hidden max-w-xs md:max-w-md lg:max-w-lg mx-auto">
+    <div className="relative bg-zinc-50/80 rounded-lg shadow-md overflow-hidden max-w-xs md:max-w-md lg:max-w-lg mx-auto">
       <div className="relative w-full h-56 md:h-72 lg:h-96 flex items-center justify-center">
         {/* Carrusel deslizante */}
         <div className="overflow-hidden w-full h-56 md:h-72 lg:h-96 rounded-lg">
@@ -93,6 +95,48 @@ export default function ProyectContentDev({
           ))}
         </div>
       </div>
+      {/* Medallas (iconos) en la esquina inferior derecha */}
+      {medallas && medallas.length > 0 && (
+        <div className="absolute bottom-3 right-3 flex items-center gap-2 z-10">
+          {medallas.map((m, idx) => {
+            const key = `medalla-${idx}-${m}`;
+            let color = '#6b7280'; // gray-500
+            let content = '🎖️';
+            let title = `Medalla ${m}`;
+            let textShadow = '0 4px 10px rgba(107,114,128,0.12)';
+
+            if (m === 1) {
+              color = '#b45309'; // deep gold for text (visible on light bg)
+              content = '🥇​';
+              title = 'Segundo lugar';
+              textShadow = '0 6px 14px rgba(148,163,184,0.28)';
+            } else if (m === 2) {
+              color = '#374151'; // dark gray for silver emoji
+              content = '🥈';
+              title = 'Segundo lugar';
+              textShadow = '0 6px 14px rgba(148,163,184,0.28)';
+            } else if (m === 3) {
+              color = '#7c2d12'; // deep bronze tone
+              content = '🥉';
+              title = 'Tercer lugar';
+              textShadow = '0 6px 14px rgba(183,121,31,0.28)';
+            }
+
+            return (
+              <span
+                key={key}
+                className="text-2xl font-bold leading-none"
+                style={{ color, textShadow }}
+                role="img"
+                aria-label={title}
+                title={title}
+              >
+                {content}
+              </span>
+            );
+          })}
+        </div>
+      )}
       <div className="p-4">
         <div className="flex items-center justify-between mb-2">
           <h2 className="text-lg md:text-xl lg:text-2xl font-bold">{title}</h2>

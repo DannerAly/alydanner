@@ -21,7 +21,8 @@ function ProyectosDev() {
       ],
       description:
         "App de redacción de Informes médicos impulsados con IA. Ganadora del Primer lugar en la Hackathon Build with AI Bolivia 2025.",
-      tags: ["Gemini AI", "NestJS", "FastAPI"]
+      tags: ["Gemini AI", "NestJS", "FastAPI"],
+      medallas: [1]
     },
 
     {
@@ -38,8 +39,9 @@ function ProyectosDev() {
         <SiNextdotjs key="nestjs" size={24} color="#000000" />,
       ],
       description:
-        "Sistema de automatizacion y monitoreo de cultivos, Ganador de la Hackaton USFX Tech CCBOL 2024 y el concurso de proyectos de Innovacion 2024 organizado por INIAF Bolivia.",
-      tags: ["NestJS", "React"]
+        "Sistema de automatizacion y monitoreo de cultivos, Ganador de la Hackaton USFX Tech CCBOL 2024, Rally Latinoamericano de Innovación y el concurso de proyectos de Innovacion 2024 organizado por INIAF Bolivia.",
+      tags: ["NestJS", "React"],
+      medallas: [1, 1, 2]
     },
 
     {
