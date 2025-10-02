@@ -31,7 +31,7 @@ function ProyectosDev() {
         "https://media.licdn.com/dms/image/v2/D4D22AQENkAH3xnGDxw/feedshare-shrink_1280/feedshare-shrink_1280/0/1732147786296?e=1762387200&v=beta&t=96HeG-2dh0CiuwdlWRKjtlrQIaP539jsKBcaHy0L2AE",
         "https://media.licdn.com/dms/image/v2/D4D22AQHjQBBdF5FhEA/feedshare-shrink_800/feedshare-shrink_800/0/1732148437980?e=1762387200&v=beta&t=U-PA8tW1jIrKPBPA7LYXPSWExQFR2timb9gLuB6cNsI",
       ],
-      title: "Agro Smarth",
+      title: "Agro Smart",
       logos: [
         <SiNestjs key="nestjs" size={24} color="#E0234E" />,
         <SiGooglegemini key="gemini" size={24} color="#4285F4" />,
@@ -73,7 +73,7 @@ function ProyectosDev() {
       tags: ["React", "Vercel"],
       url: "https://economic-caluladora.vercel.app/"
     },
-    
+
     {
       imgsSrcs: [
         "https://i.imgur.com/UWghHEP.png",
