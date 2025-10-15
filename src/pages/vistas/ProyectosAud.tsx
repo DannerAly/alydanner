@@ -77,7 +77,7 @@ function ProyectosAud() {
         <SiBlender key="blender" size={24} color="#FF7300" />,
       ],
       description:
-        "Soy de la promo 2020, hice este video en cuarentena y lo subí a YouTube.",
+        "Soy de la promo 2020, hice este video en cuarentena y lo subí a YouTube y FB.",
       tags: ["Documental", "Cine", "VFX"]
     },
 
